@@ -1,0 +1,244 @@
+header {
+	background-color: #fff;
+	padding: 25px 0;
+}
+.nav {
+	float: right;
+}
+.nav ul {
+	padding: 0;
+}
+.nav li {
+	display: inline-block;
+	margin-left: 50px;
+}
+.nav li a {
+	@extend %franklinGothicBold;
+	color: #000;
+}
+.menuToggle a, .downloadFinancials a {
+	position: relative;
+}
+.menuToggle a {
+	padding-right: 25px;
+    display: block;
+}
+.downloadFinancials a {
+	padding-right: 20px;
+}
+
+.downArrow::before, .downArrow::after {
+	position: absolute;
+	bottom: 0;
+	width: 2px;
+	height: 8px;
+	content: "";
+	background-color: #000;
+	border-radius: 10px;
+}
+
+.downArrow::before {
+	right: calc(100% + 1px);
+	transform: rotate(-45deg);
+}
+
+.downArrow::after {
+	left: calc(100% + 1px);
+	transform: rotate(45deg);
+}
+
+.downArrowContainer {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	text-align: center;
+	position: absolute;
+    right: 0;
+    top: 4px;
+}
+
+.downArrow {
+	position: relative;
+	width: 2px;
+	height: 14px;
+	background-color: #333;
+	border-radius: 10px;
+	display: inline-block;
+}
+
+.menuContents .downArrow::before, .menuContents .downArrow::after {
+    bottom: -4px;
+    height: 16px;
+}
+
+.menuContents .downArrow::before {
+    right: calc(100% + 3px);
+}
+
+.menuContents .downArrow::after {
+    left: calc(100% + 3px);
+}
+
+.menuContents .downArrow {
+    height: 28px;
+    background-color: #333;
+}
+
+.menuContents .downArrowContainer {
+    width: 30px;
+    height: 30px;
+    right: -5px;
+    top: 12px;
+}
+
+// OVERLAY MENU
+.menuContainer {
+	background-color: rgba(255, 255, 255, .95);
+	position: fixed;
+	overflow: auto;
+	top: 105px;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s ease-in-out;
+}
+.menuOpen .menuContainer {
+	opacity: 1;
+	visibility: visible;
+	transition: 0.5s ease-in-out;
+}
+.menuContainer h1 {
+	text-transform: uppercase;
+	@extend %franklinGothicBold;
+	font-size: 45px;
+}
+.menuContainer .innerContainer {
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+html.menOpen, body.menuOpen {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+}
+
+// HAMBURGER MENU
+.hamburger {
+	transform: translateX(0);
+	transition: 0.5s ease-in-out;
+	z-index: 999999;
+	outline: none;
+	padding: 0;
+	margin-left: 10px;
+	right: 0;
+	position: absolute;
+}
+.hamburger.is-active:hover, .hamburger:hover {
+	opacity: 1;
+}
+.hamburger-box {
+	width: 15px;
+	vertical-align: middle;
+	height: 15px;
+}
+.hamburger-inner, .hamburger--spin .hamburger-inner::before, .hamburger--spin .hamburger-inner::after {
+	background-color: #000;
+	width: 15px;
+	height: 2px;
+	transition: 0.25s ease-in-out;
+}
+.menuToggle:hover .hamburger-inner, 
+.menuToggle:hover .hamburger-inner::before, 
+.menuToggle:hover .hamburger-inner::after,
+.menuToggle:hover .hamburger.is-active .hamburger-inner,
+.menuToggle:hover .hamburger.is-active .hamburger-inner::before, 
+.menuToggle:hover .hamburger.is-active .hamburger-inner::after {
+	background-color: $brandBlue;
+	transition: 0.25s ease-in-out;
+}
+.hamburger-inner {
+	margin-top: -1px;
+}
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+	background-color: #000;
+}
+.hamburger-inner::before {
+	top: -5px;
+}
+.hamburger-inner::after {
+	bottom: -5px;
+}
+
+// CONTENTS SECTION IN MENU
+.menuContents h3 {
+	@extend %franklinGothicBold;
+}
+
+.nav a {
+	color: $brandNavy;
+	transition: 0.25s ease-in-out;
+}
+.downArrow, 
+.downArrow::after, 
+.downArrow::before,
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before, 
+.hamburger.is-active .hamburger-inner::after {
+	transition: 0.25s ease-in-out;
+}
+.nav a:hover {
+	color: $brandBlue;
+	transition: 0.25s ease-in-out;
+}
+.nav a:hover .downArrow, .nav a:hover .downArrow::after, .nav a:hover .downArrow::before {
+	background-color: $brandBlue;
+	transition: 0.25s ease-in-out;
+}
+.menuContainer .downloadFinancials a {
+	padding-right: 30px;
+}
+
+.menuContainer .downloadFinancials a::after {
+	width: 22px;
+    height: 24px;
+    top: 18px;
+}
+
+// OVERLAY MENU
+.menuContents .nav ul {
+	padding: 0;
+}
+.menuContents .nav > ul {
+	-webkit-columns: 2 200px;
+    -moz-columns: 2 200px;
+    columns: 2 200px;
+    column-gap: calc(15% + 35px);
+}
+.menuContents .nav li {
+	display: block;
+	margin-left: 0;
+}
+.menuContents .nav a {
+	font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+	font-family: inherit;
+}
+.menuContents .nav li {
+	margin-bottom: 1em;
+}
+.menuContents .nav .sub-menu {
+	margin-bottom: 30px;
+}
+.menuContents .nav .sub-menu a {
+	@extend %franklinGothicBold;
+    font-weight: 600;
+    font-style: normal;
+	font-size: 20px;
+}
+.menu-item-384 {
+	break-after: column;
+}

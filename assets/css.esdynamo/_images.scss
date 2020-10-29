@@ -1,0 +1,144 @@
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.photoZoom a, .videoOverlay a {
+	position: relative;
+	display: block;
+}
+.photoZoom a::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .75);
+	content: "";
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s ease-in-out;
+}
+.photoZoom a:hover::before {
+	opacity: 1;
+	visibility: visible;
+	transition: 0.5s ease-in-out;
+}
+
+// VIDEO PLAY ICON
+.videoOverlay a::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 84px;
+	height: 84px;
+	margin-left: -42px;
+	margin-top: -42px;
+	background-image: url(../img/icons/video-play-icon.svg);
+	background-size: 100%;
+	background-position: center;
+	content: "";
+}
+
+// CEO AND CHAIR PORTRAITS
+#ceo-message .photoGrid li img {
+	max-width: 250px;
+}
+
+// PHOTO GRID
+.photoGrid {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.photoGrid li {
+	margin-bottom: 25px;
+}
+.photoGrid li:last-of-type {
+	margin-bottom: 0;
+}
+.photoGrid img {
+	width: 100%;
+}
+
+.wp-block-image.is-resized {
+	width: 100%;
+}
+
+figure.wp-block-image {
+	margin: 0;
+}
+
+.wp-block-image.size-full img {
+	width: 100%;
+}
+
+.ghostVertStitchContainer {
+	width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    height: 100%;
+    padding: 0 4em;
+    max-width: calc(1280px - 8em);
+	pointer-events: none;
+}
+
+// OBJECT FIT IMAGES
+.absolute_img, .absoluteImgContainer img {
+	max-width: none;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.videoOverlay {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.bg-img-cover {
+	background-size: cover;
+    background-position: bottom center;
+}
+
+.absolutePositionedImg {
+	position: relative;
+}
+
+.innerContainer.absoluteCaptionInnerContainer {
+	position: absolute;
+	top: -40px;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.topLeftCaption {
+	position: relative;
+}
+
+.absolutePositionedImg img {
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+figure {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+figcaption {
+	margin-top: 10px;
+}
+
+.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#progress-at-a-glance img {
+	max-width: 75%;
+    margin: auto;
+}

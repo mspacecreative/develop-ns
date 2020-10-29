@@ -1,0 +1,86 @@
+// FRANKLIN GOTHIC
+%franklinGothicBold {
+	font-family: franklin-gothic-atf, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+// SOURCE SANS PRO
+%sourceSansPro {
+	font-family: source-sans-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin-top: 0;
+	font-style: normal;
+	font-weight: normal;
+}
+h1 {
+	font-size: 50px;
+	line-height: 1.15em;
+	font-weight: 300;
+	margin-bottom: 25px;
+}
+.noMarginBottom > * {
+	margin-bottom: 0;
+}
+h2 {
+	font-size: 50px;
+	line-height: 1.15em;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+h3 {
+	font-size: 24px;
+}
+p {
+	line-height: 1.5em;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+p:last-of-type {
+	margin-bottom: 0;
+}
+.text-align-center {
+	text-align: center;
+}
+.text-align-right {
+	text-align: right;
+}
+.innerContainer a {
+	color: $brandBlue;
+	transition: 0.25s ease-in-out;
+}
+.innerContainer a:hover {
+	transition: 0.25s ease-in-out;
+}
+
+// BLOCKQUOTE
+blockquote {
+	padding-left: 4em;
+    margin-left: -4em;
+	margin-right: 0;
+	margin-bottom: 2em;
+    position: relative;
+	color: #666;
+	@extend %franklinGothicBold;
+}
+.blockQuoteAuthor {
+	font-size: 16px;
+	line-height: 1.5em;
+    display: block;
+}
+blockquote::before {
+	content: "\f10d";
+	content: "\201C";
+	position: absolute;
+	left: 0;
+	top: -20px;
+	font-size: 100px;
+}
+blockquote p {
+	font-size: 28px;
+	font-style: italic;
+}

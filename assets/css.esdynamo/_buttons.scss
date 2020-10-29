@@ -1,0 +1,59 @@
+.button {
+	text-transform: uppercase;
+	color: #fff;
+	padding: 10px 40px;
+	display: inline-block;
+	margin-top: 35px;
+	background-color: $brandBlue;
+}
+.button.light {
+	background-color: #fff;
+	color: #fff;
+}
+.innerContainer a.dark {
+	color: #fff;
+}
+.orange_bg .button.light {
+	color: $brandOrange;
+}
+.blue_bg .button.light {
+	color: $brandBlue;
+}
+.navy_bg .button.light {
+	color: $brandNavy;
+}
+.modal .button {
+	font-size: 13px;
+    padding: 0.5em 1em;
+	display: inline-block;
+	margin-top: -15px;
+	right: 80px;
+	top: 50%;
+	text-decoration: none;
+	position: absolute;
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+.light {
+	/*border: 1px solid #fff;*/
+	color: #fff;
+}
+.externalLink::after {
+	content: '\f08e';
+	font-family: fontAwesome;
+	margin-left: 5px;
+}
+.nextSection a:hover, .ctaContainer a:hover, .nextSection a, .ctaContainer a {
+	transition: 0.25s ease-in-out;
+}
+.nextSection a:hover {
+	background-color: rgba(90, 150, 175, .75);
+}
+.ctaContainer a:hover {
+	color: rgba(90, 150, 175, .75);
+	transition: 0.25s ease-in-out;
+}
+// REMOVE OUTLINE WHEN USING MOUSE
+body.using-mouse :focus {
+	outline: none!important;
+} 
