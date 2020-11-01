@@ -282,7 +282,11 @@ html.menOpen, body.menuOpen {
     border-radius: 50px!important;
 	background-color: $brandNavy!important;
 }
-.at-icon-wrapper, .at-icon-wrapper svg  {
+.at-icon-wrapper  {
+	width: 30px!important;
+	height: 30px!important;
+}
+.at-icon-wrapper svg  {
 	width: 20px!important;
 	height: 20px!important;
 }
