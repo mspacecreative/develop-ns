@@ -156,6 +156,8 @@
 	.iconAndTitleContainer {
 	    margin-left: 2em;
 	    padding: 50px 0;
+		display: flex;
+		align-items: center;
 	}
 	.ghostVertStitchContainer {
 		margin: 0;
@@ -204,20 +206,21 @@
 	    font-size: 80px;
 	}
 	.pageHeader .innerContainer .row > .col {
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: 200px;
+		padding-bottom: 0;
 	}
 	.iconAndTitleContainer {
-		background-color: $brandOrange;
 		margin-left: -2em;
 		padding: 20px 20px 20px 4em;
 	}
 	.iconAndTitleContainer .imgContainer {
-		width: 50px;
+		width: 80px;
 		float: left;
+		margin-right: 20px;
+		margin-bottom: 0;
 	}
 	.pageHeader h1 {
-	    font-size: 40px;
+	    font-size: 32px;
 		clear: both;
 	}
 	h1, h2 {
@@ -323,8 +326,7 @@
 	.pageHeader {
 		margin-top: 104px;
 	}
-	.message-from-board-chair-and-ceo .iconAndTitleContainer {
-		background-color: transparent;
+	.iconAndTitleContainer.noBgColor {
 		margin-left: 2em;
 	}
 	.pageHeader .innerContainer, .verticalStitch {
@@ -336,6 +338,12 @@
 	}
 	.innerContainer, .wp-block-columns {
 		padding: 0 2em;
+	}
+}
+
+@media (max-width: 350px) {
+	.pageHeader h1 {
+		font-size: 22px;
 	}
 }
 

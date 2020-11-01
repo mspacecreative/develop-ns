@@ -16,27 +16,12 @@ if ( $themecolour ) {
 			 			. $featuredimg .
 			 		'</div>
 			 	</div>';
-	} elseif ( $themecolour == 'blue' ) {
-		echo '<div class="pageHeader" style="background-color: #008fb7;">
-			 	<div class="row pageHeaderBgGrid end-lg end-md end-sm">
-			 		<div class="col col-lg-7 col-md-7 col-sm-5 col-xs-12 absoluteImgContainer absolutePositionedImg">'
-			 			. $featuredimg .
-			 		'</div>
-			 	</div>';
-	} elseif ( $themecolour == 'navy' ) {
-		echo '<div class="pageHeader" style="background-color: #012a3c;">
-			 	<div class="row pageHeaderBgGrid end-lg end-md end-sm">
-			 		<div class="col col-lg-7 col-md-7 col-sm-5 col-xs-12 absoluteImgContainer absolutePositionedImg">'
-			 			.$featuredimg .
-			 		'</div>
-			 	</div>';
-	}
-	
-			echo '<div class="innerContainer">
+			 	
+		   echo '<div class="innerContainer">
 			 		<div class="row">
 			 			
 			 			<div class="col col-lg-5 col-md-5 col-sm-4 col-xs-12">
-					 		<div class="iconAndTitleContainer clear">
+					 		<div class="iconAndTitleContainer clear" style="background-color: #f36f00;">
 					 			<div class="imgContainer">'
 					 			. wp_get_attachment_image( $icon, $size ) .
 					 			'</div>
@@ -45,12 +30,57 @@ if ( $themecolour ) {
 					 	</div>
 					 	
 				 	</div>
-			 	 </div>
-		 </div>';
+			 	 </div>';
+	} elseif ( $themecolour == 'blue' ) {
+		echo '<div class="pageHeader" style="background-color: #008fb7;">
+			 	<div class="row pageHeaderBgGrid end-lg end-md end-sm">
+			 		<div class="col col-lg-7 col-md-7 col-sm-5 col-xs-12 absoluteImgContainer absolutePositionedImg">'
+			 			. $featuredimg .
+			 		'</div>
+			 	</div>';
+			 	
+		   echo '<div class="innerContainer">
+			 		<div class="row">
+			 			
+			 			<div class="col col-lg-5 col-md-5 col-sm-4 col-xs-12">
+					 		<div class="iconAndTitleContainer clear" style="background-color: #008fb7;">
+					 			<div class="imgContainer">'
+					 			. wp_get_attachment_image( $icon, $size ) .
+					 			'</div>
+					 			<h1>' . $pagetitle . '</h1>
+					 		</div>
+					 	</div>
+					 	
+				 	</div>
+			 	 </div>';
+	} elseif ( $themecolour == 'navy' ) {
+		echo '<div class="pageHeader" style="background-color: #012a3c;">
+			 	<div class="row pageHeaderBgGrid end-lg end-md end-sm">
+			 		<div class="col col-lg-7 col-md-7 col-sm-5 col-xs-12 absoluteImgContainer absolutePositionedImg">'
+			 			.$featuredimg .
+			 		'</div>
+			 	</div>';
+			 	
+		   echo '<div class="innerContainer">
+			 		<div class="row">
+			 			
+			 			<div class="col col-lg-5 col-md-5 col-sm-4 col-xs-12">
+					 		<div class="iconAndTitleContainer clear" style="background-color: #012a3c;">
+					 			<div class="imgContainer">'
+					 			. wp_get_attachment_image( $icon, $size ) .
+					 			'</div>
+					 			<h1>' . $pagetitle . '</h1>
+					 		</div>
+					 	</div>
+					 	
+				 	</div>
+			 	 </div>';
+	}
+		echo  '</div>';
 } else {
 	echo '<div class="pageHeader" style="background-image: url(' . $featuredbgimg[0] . ');">
 	 	<div class="innerContainer">
-	 		<div class="iconAndTitleContainer clear">
+	 		<div class="iconAndTitleContainer noBgColor clear">
 	 			<h1>' . $pagetitle . '</h1>
 	 		</div>
 	 	</div>
