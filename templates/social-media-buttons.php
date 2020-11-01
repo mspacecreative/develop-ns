@@ -1,5 +1,5 @@
 <?php if ( have_rows('channels', 'options') ) {
-	echo '<div class="socialMedia inline">
+	echo '<div class="socialMedia">
 		  	<ul>';
 	while ( have_rows('channels', 'options') ) {
 		the_row();
