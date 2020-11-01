@@ -368,6 +368,7 @@ body.using-mouse :focus {
 	background-position: center;
 	background-color: #012a3c;
 	position: relative;
+	margin-top: 105px;
 }
 
 .pageHeader::before, .message-from-board-chair-and-ceo .pageHeader::after {
