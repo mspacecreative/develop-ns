@@ -273,3 +273,12 @@ html.menOpen, body.menuOpen {
 .menu-item-384 {
 	break-after: column;
 }
+
+// SOCIAL MEDIA SHARE BUTTONS
+.at-label {
+	display: none;
+}
+.at-style-responsive .at-share-btn {
+    border-radius: 50px!important;
+	background-color: $brandNavy!important;
+}
