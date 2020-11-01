@@ -1,7 +1,13 @@
-<div class="socialMedia">
-	<ul>
-		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-		<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-	</ul>
-</div>
+<?php if ( have_rows('channels', 'options') ) {
+	echo '<div class="socialMedia inline">
+		  	<ul>';
+	while ( have_rows('channels', 'options') ) {
+		the_row();
+		$link = get_sub_field('link', 'options');
+		$icon = get_sub_field('icon', 'options');
+							
+		echo '<li><a href="' . $link . '" target="_blank"><i class="fa ' . $icon . '"></i></a></li>';
+	}
+	echo 	'</ul>
+		</div>';
+}

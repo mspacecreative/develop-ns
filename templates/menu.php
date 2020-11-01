@@ -8,7 +8,6 @@
 			</div>
 			<div class="col col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<h3 style="margin-bottom: 5px;">Share the Report</h3>
-				
 				<?php echo do_shortcode('[addthis tool="addthis_inline_share_toolbox_s03r"]');
 				
 				$address = get_field('address', 'options');
