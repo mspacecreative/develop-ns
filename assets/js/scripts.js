@@ -23,10 +23,10 @@
 		var delta = 5;
 	    $(window).on('scroll', function() {
 	        var st = $(this).scrollTop();
-	        if ( st < lastScrollTop <= delta )  {
+	        if ( st < lastScrollTop && >= delta )  {
 	            $('header').addClass('up').removeClass('down');
 	        }
-	        else if( st > lastScrollTop ) {
+	        else if( st > lastScrollTop && <= delta ) {
 	            $('header').addClass('down').removeClass('up');
 	        }
 	        lastScrollTop = st;
