@@ -23,11 +23,12 @@
 					echo 	'</ul>
 						 </div>';
 				}
+				-->
+				<?php 
 				$address = get_field('address', 'options');
 				if ( $address ) {
 					echo '<p>' . $address . '</p>';
 				} ?>
-				-->
 			</div>
 			<p>
 				
