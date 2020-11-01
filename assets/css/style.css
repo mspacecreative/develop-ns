@@ -2703,6 +2703,11 @@ html.menOpen, body.menuOpen {
 	background-color: #012a3c !important;
 }
 
+.at-icon-wrapper, .at-icon-wrapper svg {
+	width: 20px !important;
+	height: 20px !important;
+}
+
 /* Slider */
 
 .slick-slider {
