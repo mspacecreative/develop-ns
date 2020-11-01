@@ -118,7 +118,7 @@
 		// CLOSE MENU IF LINK HAS HASH TAG
 		$('.menuContents .nav .sub-menu a').click(function() {
 			var hamburger = $('.hamburger');
-			if (location.href.indexOf("#") != -1) {
+			if ( this.href.indexOf("#") != -1 ) {
 			    hamburger.toggleClass('is-active');
 				$('body, html').toggleClass('menuOpen');
 			}
