@@ -3399,6 +3399,10 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	.innerContainer, .wp-block-columns {
 		padding: 0 2em;
 	}
+	
+	.pageHeader .noBgColor h1 {
+		max-width: 75%;
+	}
 }
 
 @media (max-width: 350px) {

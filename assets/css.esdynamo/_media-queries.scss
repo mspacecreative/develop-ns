@@ -339,6 +339,9 @@
 	.innerContainer, .wp-block-columns {
 		padding: 0 2em;
 	}
+	.pageHeader .noBgColor h1 {
+	    max-width: 75%;
+	}
 }
 
 @media (max-width: 350px) {
