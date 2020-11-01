@@ -36,13 +36,8 @@
 		
 		<!-- SOCIAL MEDIA BUTTONS -->
 		<?php get_template_part('templates/social-media-buttons'); ?>
-		<!-- / SOCIAL MEDIA BUTTONS -->
-		
-		<!-- BACKGROUND IMAGE ON MOBILE
-		<div class="background-img"></div>
-		 / BACKGROUND IMAGE ON MOBILE -->
-
-		<?php get_template_part('templates/top-header'); ?>
 		
 		<!-- wrapper -->
 		<div class="wrapper">
+			
+			<?php get_template_part('templates/top-header'); ?>

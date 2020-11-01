@@ -6,6 +6,7 @@
 	height: calc(100vh - 105px);
 	position: relative;
 	overflow: hidden;
+	//padding-top: 105px;
 }
 .hero .innerContainer {
 	position: relative;
@@ -31,6 +32,10 @@
 	text-transform: uppercase;
 	line-height: 1.35em;
 	margin-bottom: 0;
+}
+
+.slick-slide img {
+    width: 100%;
 }
 
 // SOCIAL MEDIA BUTTONS

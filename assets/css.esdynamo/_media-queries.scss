@@ -287,13 +287,55 @@
 	    height: 8px;
 	}
 	.hamburger {
-	    top: -13px;
+	    top: -18px;
 	}
 	footer .row .col:last-of-type {
 	   align-self: flex-start;
 	}
 	footer .logo {
 		margin-bottom: 25px;
+	}
+	.hamburger-box {
+	    width: 25px;
+	    height: 25px;
+	}
+	.hamburger-inner, .hamburger--spin .hamburger-inner::before, .hamburger--spin .hamburger-inner::after {
+		width: 25px;
+	}
+	.hamburger-inner::before {
+	    top: -7px;
+	}
+	.hamburger-inner::after {
+	    bottom: -7px;
+	}
+	.menuContainer {
+		top: 104px;
+	}
+	.videoOverlay a::after {
+		width: 42px;
+	    height: 42px;
+	    margin-left: -21px;
+	    margin-top: -21px;
+	}
+	#ceo-message {
+		background-size: auto;
+	}
+	.pageHeader {
+		margin-top: 104px;
+	}
+	.message-from-board-chair-and-ceo .iconAndTitleContainer {
+		background-color: transparent;
+		margin-left: 2em;
+	}
+	.pageHeader .innerContainer, .verticalStitch {
+	    position: relative;
+	    z-index: 99;
+	}
+	.message-from-board-chair-and-ceo .pageHeader::before {
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+	}
+	.innerContainer, .wp-block-columns {
+		padding: 0 2em;
 	}
 }
 
@@ -420,8 +462,28 @@
 	footer .row .col:last-of-type {
 	   align-self: flex-start;
 	}
-	.logo {
+	footer .logo {
 		margin-bottom: 25px;
+	}
+	#ceo-message {
+		background-size: auto;
+	}
+	.pageHeader {
+		margin-top: 105px;
+	}
+	.message-from-board-chair-and-ceo .iconAndTitleContainer {
+		background-color: transparent;
+		margin-left: 2em;
+	}
+	.pageHeader .innerContainer, .verticalStitch {
+	    position: relative;
+	    z-index: 99;
+	}
+	.message-from-board-chair-and-ceo .pageHeader::before {
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+	}
+	.innerContainer, .wp-block-columns {
+		padding: 0 2em;
 	}
 }
 

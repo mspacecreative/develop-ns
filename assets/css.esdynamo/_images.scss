@@ -122,6 +122,7 @@ figure.wp-block-image {
 	position: absolute;
     left: 50%;
     transform: translateX(-50%);
+	width: calc(100% + 2px);
 }
 
 figure {

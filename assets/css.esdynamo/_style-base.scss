@@ -302,7 +302,7 @@ footer .row .col:last-of-type {
 	background-size: 100%;
 	width: 250px;
 	height: 99px;
-	z-index: 2;
+	z-index: 999;
 }
 
 .homePagePagesFeedContainer > .row:nth-child(2)::before, .thriving-communities .wp-block-image.videoOverlay::before {

@@ -18,6 +18,19 @@
 		});
 		*/
 		
+		// HIDE/SHOW HEADER ON SCROLL
+		var lastScrollTop = 0;
+	    $(window).on('scroll', function() {
+	        var st = $(this).scrollTop();
+	        if ( st < lastScrollTop )  {
+	            $('header').addClass('up').removeClass('down');
+	        }
+	        else if( st > lastScrollTop ) {
+	            $('header').addClass('down').removeClass('up');
+	        }
+	        lastScrollTop = st;
+	    });
+		
 		// REMOVE OUTLINE ON CLICKABLE ITEMS WHEN USING MOUSE
 		document.body.addEventListener('mousedown', function() {
 		  document.body.classList.add('using-mouse');
@@ -56,11 +69,6 @@
 		// END SMOOTH SCROLL TO ANCHORS
 		
 		// MOBILE MENU
-		$('.toggle').click(function () {
-			$('.mobile-menu').slideToggle();
-			$(this).toggleClass('open');
-		});
-		
 		$('.menuToggle').click(function(e) {
 			e.preventDefault();
 			$(this).find('.hamburger').toggleClass('is-active');

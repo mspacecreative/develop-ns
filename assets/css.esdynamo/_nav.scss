@@ -1,6 +1,37 @@
 header {
 	background-color: #fff;
 	padding: 25px 0;
+	transition: 0.5s ease-in-out;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	transform: translateY(0);
+	top: 0;
+}
+header.up {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	transition: 0.5s ease-in-out;
+	transform: translateY(0);
+	top: 0;
+}
+.header.down {
+	transform: translateY(-105px);
+	transition: 0.5s ease-in-out;
+}
+header.up ~ .hero, .hero {
+	margin-top: 105px;
+}
+.hero {
+	transition: 0.25s ease-in-out;
+}
+.wrapper {
+	transition: 0.25s ease-in-out;
+}
+header.down ~ .wrapper, header.up ~ .wrapper {
+	padding-top: 0;
+	transition: 0.25s ease-in-out;
 }
 .nav {
 	float: right;
@@ -121,7 +152,7 @@ header {
 }
 html.menOpen, body.menuOpen {
 	overflow: hidden;
-	position: fixed;
+	//position: fixed;
 	width: 100%;
 }
 

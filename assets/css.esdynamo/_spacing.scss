@@ -63,7 +63,20 @@
 	background-position: center;
 	background-color: $brandNavy;
 	position: relative;
-	overflow: hidden;
+	//overflow: hidden;
+}
+.pageHeader::before, .message-from-board-chair-and-ceo .pageHeader::after {
+	position: absolute;
+    background-image: url(../img/textures/header-sketch.png);
+    width: 100%;
+    height: 100%;
+    background-size: 55%;
+    top: 120px;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 99;
+	content: "";
 }
 .pageHeader .imgContainer {
 	margin-bottom: 20px;
