@@ -2694,6 +2694,15 @@ html.menOpen, body.menuOpen {
 	break-after: column;
 }
 
+.at-label {
+	display: none;
+}
+
+.at-style-responsive .at-share-btn {
+	border-radius: 50px !important;
+	background-color: #012a3c !important;
+}
+
 /* Slider */
 
 .slick-slider {
