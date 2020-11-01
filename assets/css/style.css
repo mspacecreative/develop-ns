@@ -1023,6 +1023,10 @@ figure.wp-block-image {
 	width: calc(100% + 2px);
 }
 
+.pageHeaderBgGrid {
+	overflow: hidden;
+}
+
 figure {
 	margin-top: 25px;
 	margin-bottom: 25px;
