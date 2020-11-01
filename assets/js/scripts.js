@@ -26,7 +26,7 @@
 	        if ( st < lastScrollTop && st < delta )  {
 	            $('header').addClass('up').removeClass('down');
 	        }
-	        else if( st > lastScrollTop && st > delta ) {
+	        else if( st > lastScrollTop ) {
 	            $('header').addClass('down').removeClass('up');
 	        }
 	        lastScrollTop = st;
