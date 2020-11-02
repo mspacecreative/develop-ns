@@ -82,12 +82,18 @@
 .socialMedia ul li {
 	background-color: #fff;
 	border-radius: 100%;
+	border: 1px solid #fff;
 	height: 30px;
 	width: 30px;
 	margin: 15px;
 	display: flex;
     align-items: center;
 	justify-content: center;
+	transition: 0.25s ease-in-out;
+}
+.socialMedia ul li:hover {
+	background-color: transparent;
+	transition: 0.25s ease-in-out;
 }
 .socialMedia.inline ul li {
 	background-color: $brandNavy;
@@ -102,8 +108,9 @@
     align-items: center;
 	font-size: 18px;
 }
-.socialMedia.inline ul li a {
+.socialMedia.inline ul li a, .socialMedia ul li:hover > a {
 	color: #fff;
+	transition: 0.25s ease-in-out;
 }
 body .fa,body .far,body .fas {
 	font-family: fontAwesome;

@@ -186,12 +186,19 @@
 .socialMedia ul li {
 	background-color: #fff;
 	border-radius: 100%;
+	border: 1px solid #fff;
 	height: 30px;
 	width: 30px;
 	margin: 15px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: 0.25s ease-in-out;
+}
+
+.socialMedia ul li:hover {
+	background-color: transparent;
+	transition: 0.25s ease-in-out;
 }
 
 .socialMedia.inline ul li {
@@ -209,8 +216,9 @@
 	font-size: 18px;
 }
 
-.socialMedia.inline ul li a {
+.socialMedia.inline ul li a, .socialMedia ul li:hover > a {
 	color: #fff;
+	transition: 0.25s ease-in-out;
 }
 
 body .fa, body .far, body .fas {
@@ -232,15 +240,25 @@ body .fa, body .far, body .fas {
 	display: inline-block;
 	margin-top: 35px;
 	background-color: #008fb7;
+	border: 1px solid #008fb7;
+	transition: 0.25s ease-in-out;
 }
 
 .button.light {
 	background-color: #fff;
+	border: 1px solid #fff;
 	color: #fff;
+	transition: 0.25s ease-in-out;
 }
 
 .innerContainer a.dark {
 	color: #fff;
+}
+
+.innerContainer .button:hover {
+	transition: 0.25s ease-in-out;
+	background-color: transparent;
+	color: #008fb7;
 }
 
 .orange_bg .button.light {
@@ -253,6 +271,12 @@ body .fa, body .far, body .fas {
 
 .navy_bg .button.light {
 	color: #012a3c;
+}
+
+.navy_bg .button.light:hover, .orange_bg .button.light:hover, .blue_bg .button.light:hover {
+	background-color: transparent;
+	color: #fff;
+	transition: 0.25s ease-in-out;
 }
 
 .modal .button {
@@ -872,10 +896,11 @@ blockquote {
 	margin-bottom: 2em;
 	position: relative;
 	color: #666;
+	letter-spacing: -0.02em;
 }
 
 .blockQuoteAuthor {
-	font-size: 16px;
+	font-size: 19px;
 	line-height: 1.5em;
 	display: block;
 }
@@ -890,7 +915,7 @@ blockquote::before {
 }
 
 blockquote p {
-	font-size: 28px;
+	font-size: 24px;
 	font-style: italic;
 }
 

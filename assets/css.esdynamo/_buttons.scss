@@ -5,13 +5,22 @@
 	display: inline-block;
 	margin-top: 35px;
 	background-color: $brandBlue;
+	border: 1px solid $brandBlue;
+	transition: 0.25s ease-in-out;
 }
 .button.light {
 	background-color: #fff;
+	border: 1px solid #fff;
 	color: #fff;
+	transition: 0.25s ease-in-out;
 }
 .innerContainer a.dark {
 	color: #fff;
+}
+.innerContainer .button:hover {
+	transition: 0.25s ease-in-out;
+	background-color: transparent;
+	color: $brandBlue;
 }
 .orange_bg .button.light {
 	color: $brandOrange;
@@ -21,6 +30,12 @@
 }
 .navy_bg .button.light {
 	color: $brandNavy;
+}
+
+.navy_bg .button.light:hover, .orange_bg .button.light:hover, .blue_bg .button.light:hover {
+	background-color: transparent;
+	color: #fff;
+	transition: 0.25s ease-in-out;
 }
 .modal .button {
 	font-size: 13px;
