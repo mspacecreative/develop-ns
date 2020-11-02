@@ -2742,6 +2742,10 @@ html.menOpen, body.menuOpen {
 	height: 20px !important;
 }
 
+.at-resp-share-element .at-share-btn:hover {
+	animation: none !important;
+}
+
 /* Slider */
 
 .slick-slider {
