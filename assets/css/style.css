@@ -235,7 +235,7 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+
 	top: 50%;
 	margin-top: 52.5px;
 	transform: translateY(-50%);
-	z-index: 3;
+	z-index: 999;
 }
 
 .page .socialMedia {
@@ -246,7 +246,7 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+
 	top: 187px;
 	margin-top: 105px;
 	transform: translateY(-50%);
-	z-index: 3;
+	z-index: 999;
 }
 
 .home.page .socialMedia.inline, .page .socialMedia.inline {
@@ -488,7 +488,6 @@ body.using-mouse :focus {
 	background-image: url(../img/textures/header-sketch.png);
 	width: 100%;
 	height: 100%;
-	background-size: 55%;
 	top: 120px;
 	right: 0;
 	background-repeat: no-repeat;
@@ -545,7 +544,7 @@ body.using-mouse :focus {
 	background-repeat: repeat-y;
 }
 
-#working-with-diverse-community {
+#working-with-community {
 	padding-top: 0;
 }
 
@@ -553,11 +552,11 @@ body.using-mouse :focus {
 	padding: 0;
 }
 
-#working-with-diverse-community .col:first-of-type > p {
+#working-with-community .col:first-of-type > p {
 	margin-top: 0;
 }
 
-#working-with-diverse-community h2 {
+#working-with-community h2 {
 	padding-top: 80px;
 }
 
@@ -2535,7 +2534,7 @@ header {
 	transition: 0.5s ease-in-out;
 	position: fixed;
 	width: 100%;
-	z-index: 999;
+	z-index: 9999;
 	transform: translateY(0);
 	top: 0;
 }
@@ -2543,7 +2542,6 @@ header {
 header.up {
 	position: fixed;
 	width: 100%;
-	z-index: 999;
 	transition: 0.5s ease-in-out;
 	transform: translateY(0);
 	top: 0;
@@ -2669,11 +2667,11 @@ header.down ~ .wrapper, header.up ~ .wrapper {
 	background-color: rgba(255, 255, 255, 0.95);
 	position: fixed;
 	overflow: auto;
-	top: 105px;
+	top: 104px;
 	left: 0;
 	height: 100%;
 	width: 100%;
-	z-index: 999;
+	z-index: 9999;
 	opacity: 0;
 	visibility: hidden;
 	transition: 0.5s ease-in-out;
@@ -3401,7 +3399,249 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		left: 2em;
 	}
 	
-	#working-with-diverse-community .col:nth-of-type(2) {
+	#working-with-community .col:nth-of-type(2) {
+		order: -1;
+	}
+	
+	.col > h1, .col > p, .col > h2, .bullet-points > h2 {
+		padding-left: 0 !important;
+	}
+	
+	#ceo-message::after, .topLeftCaption::after, .working-waterfronts .wp-block-image.videoOverlay::after {
+		width: 125px;
+		height: 50px;
+		bottom: -25px;
+	}
+	
+	.homePagePagesFeedContainer > .row:nth-child(2)::before, .thriving-communities .wp-block-image.videoOverlay::before {
+		width: 75px;
+		height: 59px;
+		top: -25px;
+	}
+	
+	.topLeftCaption::before, .working-waterfronts .wp-block-image.videoOverlay::before {
+		width: 50px;
+		height: 51px;
+		top: -25px;
+	}
+	
+	header .nav li.downloadFinancials {
+		display: none;
+	}
+	
+	.nav li.menuToggle {
+		margin-left: 0;
+	}
+	
+	.nav li.menuToggle a {
+		font-size: 0;
+	}
+	
+	.menuContainer h1, .menuContents .nav a {
+		font-size: 24px;
+	}
+	
+	.menuContents .nav .sub-menu a {
+		font-size: 15px;
+	}
+	
+	.menuContents .nav > ul {
+		columns: inherit;
+	}
+	
+	.menuContents .downArrowContainer {
+		width: 15px;
+		height: 20px;
+		right: 5px;
+		top: 6px;
+	}
+	
+	.menuContents .downArrow {
+		height: 20px;
+	}
+	
+	.menuContents .downArrow::before {
+		right: calc(100% + 1px);
+	}
+	
+	.menuContents .downArrow::after {
+		left: calc(100% + 1px);
+	}
+	
+	.menuContents .downArrow::before, .menuContents .downArrow::after {
+		bottom: 0;
+		height: 8px;
+	}
+	
+	.hamburger {
+		top: -18px;
+	}
+	
+	footer .row .col:last-of-type {
+		align-self: flex-start;
+	}
+	
+	footer .logo {
+		margin-bottom: 25px;
+	}
+	
+	.hamburger-box {
+		width: 25px;
+		height: 25px;
+	}
+	
+	.hamburger-inner, .hamburger--spin .hamburger-inner::before, .hamburger--spin .hamburger-inner::after {
+		width: 25px;
+	}
+	
+	.hamburger-inner::before {
+		top: -7px;
+	}
+	
+	.hamburger-inner::after {
+		bottom: -7px;
+	}
+	
+	.menuContainer {
+		top: 104px;
+	}
+	
+	.videoOverlay a::after {
+		width: 42px;
+		height: 42px;
+		margin-left: -21px;
+		margin-top: -21px;
+	}
+	
+	#ceo-message {
+		background-size: auto;
+	}
+	
+	.pageHeader {
+		margin-top: 104px;
+	}
+	
+	.iconAndTitleContainer.noBgColor {
+		margin-left: 2em;
+	}
+	
+	.pageHeader .innerContainer, .verticalStitch {
+		position: relative;
+		z-index: 99;
+	}
+	
+	.message-from-board-chair-and-ceo .pageHeader::before {
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+	}
+	
+	.innerContainer, .wp-block-columns {
+		padding: 0 2em;
+	}
+	
+	.pageHeader .noBgColor h1 {
+		max-width: 75%;
+	}
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+	.iconAndTitleContainer {
+		margin-left: 2em;
+		padding: 50px 0;
+		display: flex;
+		align-items: center;
+	}
+	
+	.ghostVertStitchContainer {
+		margin: 0;
+		left: 2em;
+		transform: none;
+		max-width: calc(100% - 4em);
+	}
+	
+	blockquote {
+		margin-left: 0;
+	}
+	
+	.col h1, .col p {
+		padding-left: 0 !important;
+	}
+	
+	.col-inner {
+		padding: 4em 2em;
+	}
+	
+	.heroContentBox {
+		padding: 2em 2em 2em 6em;
+		max-width: 100%;
+	}
+	
+	.heroContentBox h1 {
+		font-size: 25px;
+	}
+	
+	.innerContainer {
+		padding: 0 2em;
+	}
+	
+	.hero .innerContainer::before {
+		left: 2em;
+	}
+	
+	.text_on_left {
+		text-align: left;
+	}
+	
+	.text_on_left .col-inner {
+		align-items: flex-start;
+	}
+	
+	.checkerBoardContainer .verticalDashedLine {
+		background-position: left 2em top;
+	}
+	
+	blockquote {
+		padding-left: 3em;
+	}
+	
+	blockquote p {
+		font-size: 20px;
+	}
+	
+	blockquote::before {
+		font-size: 80px;
+	}
+	
+	.pageHeader .innerContainer .row > .col {
+		padding-top: 200px;
+		padding-bottom: 0;
+	}
+	
+	.iconAndTitleContainer {
+		margin-left: -2em;
+		padding: 20px 20px 20px 4em;
+	}
+	
+	.iconAndTitleContainer .imgContainer {
+		width: 80px;
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+	
+	.pageHeader h1 {
+		font-size: 32px;
+		clear: both;
+	}
+	
+	h1, h2 {
+		font-size: 40px;
+	}
+	
+	.pageHeader .innerContainer::before, .ghostVertStitchContainer, .hero .innerContainer::before {
+		left: 2em;
+	}
+	
+	#working-with-community .col:nth-of-type(2) {
 		order: -1;
 	}
 	
@@ -3658,7 +3898,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		left: 2em;
 	}
 	
-	#working-with-diverse-community .col:nth-of-type(2) {
+	#working-with-community .col:nth-of-type(2) {
 		order: -1;
 	}
 	

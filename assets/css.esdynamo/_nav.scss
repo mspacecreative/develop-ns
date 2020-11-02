@@ -4,14 +4,13 @@ header {
 	transition: 0.5s ease-in-out;
 	position: fixed;
 	width: 100%;
-	z-index: 999;
+	z-index: 9999;
 	transform: translateY(0);
 	top: 0;
 }
 header.up {
 	position: fixed;
 	width: 100%;
-	z-index: 999;
 	transition: 0.5s ease-in-out;
 	transform: translateY(0);
 	top: 0;
@@ -127,11 +126,11 @@ header.down ~ .wrapper, header.up ~ .wrapper {
 	background-color: rgba(255, 255, 255, .95);
 	position: fixed;
 	overflow: auto;
-	top: 105px;
+	top: 104px;
 	left: 0;
 	height: 100%;
 	width: 100%;
-	z-index: 999;
+	z-index: 9999;
 	opacity: 0;
 	visibility: hidden;
 	transition: 0.5s ease-in-out;

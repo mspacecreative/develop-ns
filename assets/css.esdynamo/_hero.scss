@@ -47,7 +47,7 @@
 	top: 50%;
 	margin-top: 52.5px;
 	transform: translateY(-50%);
-	z-index: 3;
+	z-index: 999;
 }
 .page .socialMedia {
 	position: fixed;
@@ -57,7 +57,7 @@
 	top: 187px;
 	margin-top: 105px;
 	transform: translateY(-50%);
-	z-index: 3;
+	z-index: 999;
 }
 // SOCIAL MEDIA INLINE
 .home.page .socialMedia.inline, .page .socialMedia.inline {
