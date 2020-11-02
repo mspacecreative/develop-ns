@@ -2737,6 +2737,9 @@ html.menOpen, body.menuOpen {
 .at-icon-wrapper {
 	width: 30px !important;
 	height: 30px !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .at-icon-wrapper svg {
