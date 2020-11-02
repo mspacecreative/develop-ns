@@ -2736,7 +2736,7 @@ html.menOpen, body.menuOpen {
 	height: 30px !important;
 }
 
-.at-icon-wrapper {
+span.at-icon-wrapper {
 	width: 100% !important;
 	height: 100% !important;
 	display: flex !important;
