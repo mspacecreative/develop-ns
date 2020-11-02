@@ -56,7 +56,7 @@ if ( $blockanchor && $bgcolor == 'light' ): ?>
 			echo '<h2 class="text-align-center">' . $rowheading . '</h2>';
 		} elseif ( $rowheading && $headingalignment == 'right' ) {
 			echo '<h2 class="text-align-right">' . $rowheading . '</h2>';
-		} else {
+		} elseif ( $rowheading ) {
 			echo '<h2>' . $rowheading . '</h2>';
 		}
 		
