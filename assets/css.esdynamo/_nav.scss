@@ -278,15 +278,18 @@ html.menOpen, body.menuOpen {
 .at-label {
 	display: none;
 }
+
 .at-style-responsive .at-share-btn {
     border-radius: 50px!important;
 	background-color: $brandNavy!important;
 	border: 1px solid $brandNavy!important;
 	transition: 0.25s ease-in-out;
-}
-.at-icon-wrapper  {
 	width: 30px!important;
 	height: 30px!important;
+}
+.at-icon-wrapper  {
+	width: 100%!important;
+	height: 100%!important;
 	display: flex;
     align-items: center;
     justify-content: center;
