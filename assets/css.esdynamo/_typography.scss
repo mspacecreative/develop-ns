@@ -1,7 +1,15 @@
-// FRANKLIN GOTHIC
+// LIBRE FRANKLIN BOLD
 %franklinGothicBold {
-	font-family: franklin-gothic-atf, sans-serif;
-	font-weight: 600;
+	//font-family: franklin-gothic-atf, sans-serif;
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+// LIBRE FRANKLIN REG
+%franklinGothicReg {
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 400;
 	font-style: normal;
 }
 
@@ -32,12 +40,17 @@ h2 {
 	font-weight: 300;
 	margin-bottom: 20px;
 }
+.menuContents .nav a, h2, h1 {
+	@extend %sourceSansPro;
+}
 h3 {
-	font-size: 24px;
+	font-size: 19px;
+	font-weight: bold;
 }
 p {
+	@extend %franklinGothicReg;
 	line-height: 1.5em;
-	font-size: 18px;
+	font-size: 17px;
 	margin-bottom: 15px;
 }
 p:last-of-type {
@@ -78,10 +91,11 @@ blockquote::before {
 	content: "\201C";
 	position: absolute;
 	left: 0;
-	top: -20px;
+	top: -15px;
 	font-size: 100px;
 }
 blockquote p {
 	font-size: 24px;
 	font-style: italic;
+	font-weight: 600;
 }

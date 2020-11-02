@@ -51,7 +51,7 @@ $size = 'icon'; ?>
 					echo '<h2>' . $pagetitle . '</h2>';
 				}
 				if ( $mainheading && $subheading ) {
-					echo '<h3><strong>' . $mainheading . '<br />' . $subheading . '</strong></h3>';
+					echo '<h3><strong><span style="text-transform: uppercase;">' . $mainheading . '</span><br />' . $subheading . '</strong></h3>';
 				} elseif ( $mainheading ) {
 					echo '<h3><strong>' . $mainheading . '</strong></h3>';
 				}
@@ -59,7 +59,7 @@ $size = 'icon'; ?>
 					echo '<p>' . $excerpt . '</p>';
 				}
 					
-				echo '<p><a class="button light" href="' . get_the_permalink() . '">READ THE STORIES</a></p>'; ?>
+				echo '<a class="button light" href="' . get_the_permalink() . '">READ THE STORIES</a>'; ?>
 			</div>
 			
 		</div>
