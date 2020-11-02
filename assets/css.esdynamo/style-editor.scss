@@ -5,10 +5,10 @@
 	margin-bottom: 2em;
     position: relative;
 	color: #666;
-	font-family: franklin-gothic-atf, sans-serif!important;
+	font-family: 'Libre Franklin', sans-serif;
 }
 .editor-styles-wrapper .blockQuoteAuthor {
-	font-size: 16px;
+	font-size: 19px;
 	line-height: 1.5em;
     display: block;
 }
@@ -21,8 +21,9 @@
 	font-size: 100px;
 }
 .editor-styles-wrapper blockquote p {
-	font-size: 28px;
+	font-size: 24px!important;
 	font-style: italic;
+	font-weight: 600!important;
 }
 
 .components-resizable-box__container {
