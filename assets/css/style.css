@@ -2743,7 +2743,7 @@ html.menOpen, body.menuOpen {
 }
 
 .at-resp-share-element .at-share-btn:hover {
-	animation: none !important;
+	transform: none !important;
 }
 
 /* Slider */
