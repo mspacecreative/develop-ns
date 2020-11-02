@@ -987,6 +987,7 @@ blockquote {
 	padding-left: 4em;
 	margin-left: -4em;
 	margin-right: 0;
+	margin-bottom: 0;
 	position: relative;
 	color: #666;
 	letter-spacing: -0.02em;
