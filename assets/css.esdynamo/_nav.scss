@@ -281,6 +281,8 @@ html.menOpen, body.menuOpen {
 .at-style-responsive .at-share-btn {
     border-radius: 50px!important;
 	background-color: $brandNavy!important;
+	border: 1px solid $brandNavy!important;
+	transition: 0.25s ease-in-out;
 }
 .at-icon-wrapper  {
 	width: 30px!important;
@@ -289,7 +291,14 @@ html.menOpen, body.menuOpen {
 .at-icon-wrapper svg  {
 	width: 20px!important;
 	height: 20px!important;
+	transition: 0.25s ease-in-out;
 }
 .at-resp-share-element .at-share-btn:hover {
 	transform: none!important;
+	transition: 0.25s ease-in-out;
+	background-color: transparent!important;
+}
+.at-resp-share-element .at-share-btn:hover .at-icon-wrapper svg {
+	fill: $brandNavy!important;
+	transition: 0.25s ease-in-out;
 }
