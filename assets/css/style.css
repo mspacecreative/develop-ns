@@ -2739,14 +2739,14 @@ html.menOpen, body.menuOpen {
 .at-icon-wrapper {
 	width: 100% !important;
 	height: 100% !important;
-	display: flex;
+	display: flex !important;
 	align-items: center;
 	justify-content: center;
 }
 
 .at-icon-wrapper svg {
-	width: 20px !important;
-	height: 20px !important;
+	width: 30px !important;
+	height: 30px !important;
 	transition: 0.25s ease-in-out;
 }
 
