@@ -40,6 +40,10 @@ img {
 	content: "";
 }
 
+.bullet-points > p:first-of-type {
+	margin-top: 0;
+}
+
 // CEO AND CHAIR PORTRAITS
 #ceo-message .photoGrid li img {
 	max-width: 250px;

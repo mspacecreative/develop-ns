@@ -1058,6 +1058,10 @@ img {
 	content: "";
 }
 
+.bullet-points > p:first-of-type {
+	margin-top: 0;
+}
+
 #ceo-message .photoGrid li img {
 	max-width: 250px;
 }
