@@ -2296,6 +2296,7 @@ footer .row .col:last-of-type {
 	background-image: url(../img/textures/horizontal-dashed-line-dark.png);
 	height: 1px;
 	left: 0;
+	z-index: 1;
 }
 
 .horizontalStitchBottom::after, #experience-quote::after, #queens-marque::after, #cove::after, #marine-visitation-plan::after {
