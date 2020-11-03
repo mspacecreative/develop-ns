@@ -162,6 +162,10 @@
 		width: 100%;
 		transform: none;
 	}
+	.homePagePagesFeed:nth-last-of-type(odd) .col {
+		position: relative;
+		z-index: 1;
+	}
 }
 
 @media (max-width: 450px) {
