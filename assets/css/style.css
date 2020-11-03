@@ -5296,7 +5296,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	}
 }
 
-@media (max-device-width: 1024px) {
+@media (max-device-width: 1024px) and (orientation: landscape) {
 	.absolutePositionedImg img {
 		position: absolute;
 		left: 50%;
