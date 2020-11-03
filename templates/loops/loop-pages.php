@@ -54,6 +54,8 @@ $size = 'icon'; ?>
 					echo '<h3><strong><span style="text-transform: uppercase;">' . $mainheading . '</span><br />' . $subheading . '</strong></h3>';
 				} elseif ( $mainheading ) {
 					echo '<h3><strong>' . $mainheading . '</strong></h3>';
+				} elseif ( $subheading ) {
+					echo '<h3><strong>' . $subheading . '</strong></h3>';
 				}
 				if ( $excerpt ) {
 					echo '<p>' . $excerpt . '</p>';
