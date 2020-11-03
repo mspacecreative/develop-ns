@@ -52,9 +52,9 @@ function shipwright_styles() {
     wp_enqueue_style( 'main' );
     
     // ADOBE FONTS
-    wp_register_style( 'adobe-fonts', 'https://use.typekit.net/avx4yiz.css', array(), null );
+    //wp_register_style( 'adobe-fonts', 'https://use.typekit.net/avx4yiz.css', array(), null );
     // Register CSS
-    wp_enqueue_style( 'adobe-fonts' );
+    //wp_enqueue_style( 'adobe-fonts' );
     
     // SLICK SCRIPT
     wp_register_script('slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), null, true );
