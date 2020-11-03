@@ -63,67 +63,67 @@ if ( $blockanchor && $bgcolor == 'light' ): ?>
 		if ( $gutters == 'none' ): ?>
 			
 		<?php if ( $aligncolumns == 'top' && $reverse ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_0 top-lg top-md reverse">
+		<div class="row relativePositioning gutter_space_0 top-lg top-md reverse">
 		<?php elseif ( $aligncolumns == 'middle' && $reverse ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_0 middle-lg middle-md reverse">
+		<div class="row relativePositioning gutter_space_0 middle-lg middle-md reverse">
 		<?php elseif ( $aligncolumns == 'bottom' && $reverse ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_0 bottom-lg bottom-md reverse">
+		<div class="row relativePositioning gutter_space_0 bottom-lg bottom-md reverse">
 		<?php elseif ( $aligncolumns == 'top' && $reverse ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_0 top-lg top-md reverse">
+		<div class="row relativePositioning gutter_space_0 top-lg top-md reverse">
 		<?php elseif ( $aligncolumns == 'top' ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_0 top-lg top-md">
+		<div class="row relativePositioning gutter_space_0 top-lg top-md">
 		<?php elseif ( $aligncolumns == 'middle' ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_0 middle-lg middle-md">
+		<div class="row relativePositioning gutter_space_0 middle-lg middle-md">
 		<?php elseif ( $aligncolumns == 'bottom' ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_0 bottom-lg bottom-md">
+		<div class="row relativePositioning gutter_space_0 bottom-lg bottom-md">
 		<?php elseif ( $reverse ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_0 reverse">
+		<div class="row relativePositioning gutter_space_0 reverse">
 		<?php else : ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_0">
+		<div class="row relativePositioning gutter_space_0">
 		<?php endif; ?>
 		
 		<?php elseif ( $gutters == 'default' ): ?>
 		
 		<?php if ( $aligncolumns == 'top' && $reverse ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_1 top-lg top-md reverse">
+		<div class="row relativePositioning gutter_space_1 top-lg top-md reverse">
 		<?php elseif ( $aligncolumns == 'middle' && $reverse ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_1 middle-lg middle-md reverse">
+		<div class="row relativePositioning gutter_space_1 middle-lg middle-md reverse">
 		<?php elseif ( $aligncolumns == 'bottom' && $reverse ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_1 bottom-lg bottom-md reverse">
+		<div class="row relativePositioning gutter_space_1 bottom-lg bottom-md reverse">
 		<?php elseif ( $aligncolumns == 'top' && $reverse ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_1 top-lg top-md reverse">
+		<div class="row relativePositioning gutter_space_1 top-lg top-md reverse">
 		<?php elseif ( $aligncolumns == 'top' ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_1 top-lg top-md">
+		<div class="row relativePositioning gutter_space_1 top-lg top-md">
 		<?php elseif ( $aligncolumns == 'middle' ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_1 middle-lg middle-md">
+		<div class="row relativePositioning gutter_space_1 middle-lg middle-md">
 		<?php elseif ( $aligncolumns == 'bottom' ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_1 bottom-lg bottom-md">
+		<div class="row relativePositioning gutter_space_1 bottom-lg bottom-md">
 		<?php elseif ( $reverse ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_1 reverse">
+		<div class="row relativePositioning gutter_space_1 reverse">
 		<?php else : ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_1">
+		<div class="row relativePositioning gutter_space_1">
 		<?php endif; ?>
 		
 		<?php else : ?>
 		
 		<?php if ( $aligncolumns == 'top' && $reverse ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_2 top-lg top-md reverse">
+		<div class="row relativePositioning gutter_space_2 top-lg top-md reverse">
 		<?php elseif ( $aligncolumns == 'middle' && $reverse ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_2 middle-lg middle-md reverse">
+		<div class="row relativePositioning gutter_space_2 middle-lg middle-md reverse">
 		<?php elseif ( $aligncolumns == 'bottom' && $reverse ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_2 bottom-lg bottom-md reverse">
+		<div class="row relativePositioning gutter_space_2 bottom-lg bottom-md reverse">
 		<?php elseif ( $aligncolumns == 'top' && $reverse ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_2 top-lg top-md reverse">
+		<div class="row relativePositioning gutter_space_2 top-lg top-md reverse">
 		<?php elseif ( $aligncolumns == 'top' ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_2 top-lg top-md">
+		<div class="row relativePositioning gutter_space_2 top-lg top-md">
 		<?php elseif ( $aligncolumns == 'middle' ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_2 middle-lg middle-md">
+		<div class="row relativePositioning gutter_space_2 middle-lg middle-md">
 		<?php elseif ( $aligncolumns == 'bottom' ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_2 bottom-lg bottom-md">
+		<div class="row relativePositioning gutter_space_2 bottom-lg bottom-md">
 		<?php elseif ( $reverse ): ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_2 reverse">
+		<div class="row relativePositioning gutter_space_2 reverse">
 		<?php else : ?>
-		<div data-aos="fade-up" class="row relativePositioning gutter_space_2">
+		<div class="row relativePositioning gutter_space_2">
 		<?php endif; ?>
 		
 		<?php endif; ?>
@@ -195,7 +195,7 @@ if ( $blockanchor && $bgcolor == 'light' ): ?>
 				
 				$img = get_sub_field('image');
 				if( !empty( $img ) ): ?>
-				<img class="full-width" src="<?php echo esc_url($img['url']); ?>" alt="<?php echo esc_attr($img['alt']); ?>">
+				<img data-aos="fade" class="full-width" src="<?php echo esc_url($img['url']); ?>" alt="<?php echo esc_attr($img['alt']); ?>">
 				<?php endif; ?>
 				
 				<?php else :
@@ -304,7 +304,7 @@ if ( $blockanchor && $bgcolor == 'light' ): ?>
 				
 				$img = get_sub_field('image');
 				if( !empty( $img ) ): ?>
-				<img class="full-width" src="<?php echo esc_url($img['url']); ?>" alt="<?php echo esc_attr($img['alt']); ?>">
+				<img data-aos="fade" class="full-width" src="<?php echo esc_url($img['url']); ?>" alt="<?php echo esc_attr($img['alt']); ?>">
 				<?php endif; ?>
 				
 				<?php elseif ( $contenttype == 'content' ):
