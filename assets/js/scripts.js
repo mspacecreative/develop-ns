@@ -21,7 +21,7 @@
 		// CHANGE FADE IN DIRECTION ON IMAGE
 		if ( $('.row').hasClass('reverse') ) {
 			var reversedRow = $('.reverse');
-			var imgFadeRight = reversedRow.children('img');
+			var imgFadeRight = $(reversedRow, 'img');
 			imgFadeRight.attr('data-aos', 'fade-right');
 		}
 		
