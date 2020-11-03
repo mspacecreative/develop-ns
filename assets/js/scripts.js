@@ -18,6 +18,9 @@
 		});
 		*/
 		
+		// CHANGE FADE IN DIRECTION ON IMAGE
+		$('.reverse').children('img').attr('data-aos', 'fade-right');
+		
 		// AOS INIT
 		$(function() {
 			AOS.init();
