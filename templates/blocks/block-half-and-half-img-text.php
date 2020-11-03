@@ -304,7 +304,7 @@ if ( $blockanchor && $bgcolor == 'light' ): ?>
 				
 				$img = get_sub_field('image');
 				if( !empty( $img ) ): ?>
-				<img data-aos="fade" class="full-width" src="<?php echo esc_url($img['url']); ?>" alt="<?php echo esc_attr($img['alt']); ?>">
+				<img class="full-width" src="<?php echo esc_url($img['url']); ?>" alt="<?php echo esc_attr($img['alt']); ?>">
 				<?php endif; ?>
 				
 				<?php elseif ( $contenttype == 'content' ):
