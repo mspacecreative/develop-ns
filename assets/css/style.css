@@ -5303,6 +5303,14 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		transform: translateX(-50%);
 		width: calc(100% + 2px);
 	}
+	
+	.homePagePagesFeed:nth-last-of-type(even) .col-inner, .homePagePagesFeed:nth-last-of-type(even) .col-inner .imgContainer, .homePagePagesFeed:nth-last-of-type(even) .col-inner .imgContainer img {
+		margin-left: auto;
+	}
+	
+	.homePagePagesFeed:nth-last-of-type(even) > .col {
+		text-align: right;
+	}
 }
 
 /*
