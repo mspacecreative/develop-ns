@@ -342,6 +342,9 @@
 	.pageHeader .noBgColor h1 {
 	    max-width: 75%;
 	}
+	.pageHeader::before, .message-from-board-chair-and-ceo .pageHeader::after {
+		background-size: 75%;
+	}
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
