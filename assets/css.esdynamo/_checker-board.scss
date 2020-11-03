@@ -77,9 +77,12 @@
 .homePagePagesFeed:nth-last-of-type(even) > .col {
 	text-align: right;
 }
-.homePagePagesFeed:nth-last-of-type(even) .col-inner {
-	display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+//.homePagePagesFeed:nth-last-of-type(even) .col-inner {
+	//display: flex;
+    //flex-direction: column;
+    //align-items: flex-end;
+	//margin-left: auto;
+//}
+.homePagePagesFeed:nth-last-of-type(even) .col-inner .imgContainer, .homePagePagesFeed:nth-last-of-type(even) .col-inner .imgContainer img {
 	margin-left: auto;
 }
