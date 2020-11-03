@@ -172,6 +172,74 @@ if ( have_rows('video_group', 'options') ) :
 			endwhile;
 		endif;
 		
+		// WORKING WATERFRONTS 2
+		if ( have_rows('working_waterfronts_2', 'options') ) :
+			while ( have_rows('working_waterfronts_2', 'options') ) : the_row();
+			$video = get_sub_field('video', 'options');
+			$video_url = get_sub_field('video', false, false);
+			$dataattr = get_sub_field('data_attribute', 'options'); ?>
+			
+			<div data-id="<?php echo $dataattr ?>" class="modal">
+				<div class="innerContainer">
+					<button class="closeModalButton">
+						<span>&nbsp;</span>
+						<span>&nbsp;</span>
+					</button>
+					<?php 
+					if ( $video ) : ?>
+					<a class="button light externalLink" href="<?php echo $video_url ?>" target="_blank">Open in new tab
+					</a>
+					<?php endif; ?>
+				</div>
+				
+				<div class="modalInner">
+					<div class="iframeContainer">
+						<?php 
+						if ( $video ) {
+							echo $video;
+						} ?>
+					</div>
+				</div>
+			</div>
+			
+			<?php 
+			endwhile;
+		endif;
+		
+		// WORKING WATERFRONTS 3
+		if ( have_rows('working_waterfronts_3', 'options') ) :
+			while ( have_rows('working_waterfronts_3', 'options') ) : the_row();
+			$video = get_sub_field('video', 'options');
+			$video_url = get_sub_field('video', false, false);
+			$dataattr = get_sub_field('data_attribute', 'options'); ?>
+			
+			<div data-id="<?php echo $dataattr ?>" class="modal">
+				<div class="innerContainer">
+					<button class="closeModalButton">
+						<span>&nbsp;</span>
+						<span>&nbsp;</span>
+					</button>
+					<?php 
+					if ( $video ) : ?>
+					<a class="button light externalLink" href="<?php echo $video_url ?>" target="_blank">Open in new tab
+					</a>
+					<?php endif; ?>
+				</div>
+				
+				<div class="modalInner">
+					<div class="iframeContainer">
+						<?php 
+						if ( $video ) {
+							echo $video;
+						} ?>
+					</div>
+				</div>
+			</div>
+			
+			<?php 
+			endwhile;
+		endif;
+		
 	endwhile;
 endif; ?>
 
