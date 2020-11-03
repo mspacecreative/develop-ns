@@ -733,22 +733,7 @@
 		bottom: -26px;
 	}
 }
-@media (max-device-width: 1024px) and (orientation: landscape) {
-	.absolutePositionedImg img {
-	    position: absolute;
-	    left: 50%;
-	    transform: translateX(-50%);
-	    width: calc(100% + 2px);
-	}
-	.homePagePagesFeed:nth-last-of-type(even) .col-inner, .homePagePagesFeed:nth-last-of-type(even) .col-inner .imgContainer, .homePagePagesFeed:nth-last-of-type(even) .col-inner .imgContainer img {
-		margin-left: auto;
-	}
-	.homePagePagesFeed:nth-last-of-type(even) > .col {
-		text-align: right;
-	}
-}
-
-@media (max-device-width: 1024px) and (orientation: portrait) {
+@media (max-device-width: 1024px) {
 	.absolutePositionedImg img {
 	    position: absolute;
 	    left: 50%;
