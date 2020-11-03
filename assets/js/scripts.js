@@ -48,7 +48,8 @@
 		$(document).keyup(function(e) {
 		    if (e.key === "Escape") { // escape key maps to keycode `27`
 				$('.hamburger').removeClass('is-active');
-				$('body, html').toggleClass('menuOpen');
+				$('body, html').removeClass('menuOpen');
+				$('.modal').fadeOut();
 		    }
 		});
 		
