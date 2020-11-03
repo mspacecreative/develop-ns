@@ -5288,7 +5288,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	.absolutePositionedImg img {
 		position: relative;
 		left: auto;
-		transform: none;
+		width: 100%;
 	}
 }
 
