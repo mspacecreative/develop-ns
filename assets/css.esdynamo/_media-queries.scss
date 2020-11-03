@@ -725,6 +725,11 @@
 	.homePagePagesFeed:nth-last-of-type(even) > .col {
 		text-align: left;
 	}
+	.absolutePositionedImg img {
+		position: relative;
+		left: auto;
+		width: 100%;
+	}
 }
 @media (min-width: 1920px) {
 	.pageHeaderBgGrid > .col:last-of-type {
