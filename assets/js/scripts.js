@@ -20,7 +20,7 @@
 		
 		// CHANGE FADE IN DIRECTION ON IMAGE
 		if ( $('.row').hasClass('reverse') ) {
-			$(this).children('img').attr('data-aos', 'fade-right');
+			$(this).children('.col > img').attr('data-aos', 'fade-right');
 		}
 		
 		// AOS INIT
