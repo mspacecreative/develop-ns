@@ -4578,7 +4578,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		transform: none;
 	}
 	
-	.homePagePagesFeed:nth-last-of-type(odd) .col {
+	.homePagePagesFeed:nth-last-of-type(odd) .col:nth-last-of-type(even) {
 		position: relative;
 		z-index: 1;
 	}
