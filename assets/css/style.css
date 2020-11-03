@@ -4575,6 +4575,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		position: relative;
 		left: auto;
 		width: 100%;
+		transform: none;
 	}
 }
 
