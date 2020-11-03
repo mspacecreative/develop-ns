@@ -728,6 +728,14 @@
 		bottom: -26px;
 	}
 }
+@media (max-device-width: 1024px) {
+	.absolutePositionedImg img {
+	    position: absolute;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    width: calc(100% + 2px);
+	}
+}
 
 /*
 @media (max-width: 48em) {
