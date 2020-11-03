@@ -162,7 +162,7 @@
 		width: 100%;
 		transform: none;
 	}
-	.homePagePagesFeed:nth-last-of-type(odd) .col:nth-last-of-type(odd), .homePagePagesFeed:nth-last-of-type(even) .col:nth-last-of-type(even) {
+	.homePagePagesFeed:nth-last-of-type(odd) .col:nth-last-of-type(odd), .homePagePagesFeed:nth-last-of-type(even) .col:nth-last-of-type(odd) {
 		position: relative;
 		z-index: 1;
 	}
