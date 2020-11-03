@@ -18,6 +18,11 @@
 		});
 		*/
 		
+		// AOS INIT
+		$(function() {
+			AOS.init();
+		});
+		
 		// HIDE/SHOW HEADER ON SCROLL
 		var lastScrollTop = 0;
 		var delta = 5;

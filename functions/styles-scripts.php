@@ -61,6 +61,11 @@ function shipwright_styles() {
 	// Enqueue Scripts
 	wp_enqueue_script( 'slick' );
 	
+	// AOS SCRIPT
+	wp_register_script('aos', 'https://unpkg.com/aos@2.3.1/dist/aos.js', array('jquery'), null, true );
+	// Enqueue Scripts
+	wp_enqueue_script( 'aos' );
+	
 	// Custom scripts
     wp_register_script('shipwrightscripts', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), null, true );
 	// Enqueue Scripts
