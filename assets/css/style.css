@@ -5276,6 +5276,16 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	}
 }
 
+@media (min-width: 47em) {
+	.homePagePagesFeed:nth-last-of-type(even) .col-inner, .homePagePagesFeed:nth-last-of-type(even) .col-inner .imgContainer, .homePagePagesFeed:nth-last-of-type(even) .col-inner .imgContainer img {
+		margin-left: 0;
+	}
+	
+	.homePagePagesFeed:nth-last-of-type(even) > .col {
+		text-align: left;
+	}
+}
+
 @media (min-width: 1920px) {
 	.pageHeaderBgGrid > .col:last-of-type {
 		flex-basis: 55%;
