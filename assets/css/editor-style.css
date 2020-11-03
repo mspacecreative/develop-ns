@@ -70,7 +70,7 @@ blockquote::before {
 	content: "\201C";
 	position: absolute;
 	left: 0;
-	top: -20px;
+	top: -28px;
 	font-size: 100px;
 }
 
