@@ -20,8 +20,8 @@
 		
 		// CHANGE FADE IN DIRECTION ON IMAGE
 		if ( $('.row').hasClass('reverse') ) {
-			var reversedRow = $('.reverse img');
-			reversedRow.attr('data-aos', 'fade-right');
+			var reversedFadeIn = $('.reverse img');
+			reversedFadeIn.attr('data-aos', 'fade-right');
 		}
 		
 		// AOS INIT
