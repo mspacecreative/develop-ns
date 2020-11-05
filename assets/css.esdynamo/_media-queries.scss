@@ -55,6 +55,12 @@
 		position: relative;
 		z-index: 2;
 	}
+	.home .photoGrid {
+		display: flex;
+	}
+	.home .photoGrid li:first-of-type {
+		margin-right: 30px;
+	}
 }
 
 
@@ -77,12 +83,6 @@
 	}
 	.social-links {
 		font-size: 30px;
-	}
-}
-
-@media (max-width: 850px) and (orientation: landscape) {
-	.pageHeaderBgGrid {
-		height: 100%!important;
 	}
 }
 
@@ -371,6 +371,18 @@
 	.pageHeader::before, .message-from-board-chair-and-ceo .pageHeader::after {
 		background-size: 75%;
 	}
+	.fullSpan {
+		height: 200px;
+	}
+	.fullSpan > a {
+		height: 100%;
+	}
+	.wp-block-image.size-full img {
+	    width: 100%;
+	    object-fit: cover;
+	    height: 100%;
+	    max-width: 100%;
+	}
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
@@ -542,7 +554,11 @@
 	    margin-top: -21px;
 	}
 	#ceo-message {
-		background-size: auto;
+		background-size: 200%;
+	}
+	.bg-img-cover {
+	    background-size: 200%;
+	    background-repeat: no-repeat;
 	}
 	.pageHeader {
 		margin-top: 104px;
@@ -698,7 +714,11 @@
 		margin-bottom: 25px;
 	}
 	#ceo-message {
-		background-size: auto;
+		background-size: 100%;
+	}
+	.bg-img-cover {
+	    background-size: 100%;
+	    background-repeat: no-repeat;
 	}
 	.pageHeader {
 		margin-top: 105px;
@@ -716,6 +736,9 @@
 	}
 	.innerContainer, .wp-block-columns {
 		padding: 0 2em;
+	}
+	.pageHeaderBgGrid {
+		height: 100%!important;
 	}
 }
 
@@ -790,5 +813,16 @@
 	.pageHeaderBgGrid > .col:last-of-type {
 		flex-basis: 55%;
 		max-width: 55%;
+	}
+}
+
+@media only screen and (min-width: 64em) and (max-width: 74em) {
+	#ceo-message .col-md-6:first-of-type {
+		flex-basis: 58.33333333%;
+	    max-width: 58.33333333%;
+	}
+	#ceo-message .col-md-6:last-of-type {
+		flex-basis: 41.66666667%;
+	    max-width: 41.66666667%;
 	}
 }
