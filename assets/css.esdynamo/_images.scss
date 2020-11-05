@@ -40,6 +40,20 @@ img {
 	content: "";
 }
 
+.issuuOverlay a::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 84px;
+	height: 84px;
+	margin-left: -42px;
+	margin-top: -42px;
+	background-image: url(../img/icons/issuu-book-icon.svg);
+	background-size: 100%;
+	background-position: center;
+	content: "";
+}
+
 #working-with-community .bullet-points > p:first-of-type {
 	margin-top: 0;
 }
