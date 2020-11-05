@@ -48,10 +48,16 @@ img {
 	height: 84px;
 	margin-left: -42px;
 	margin-top: -42px;
-	background-image: url(../img/icons/issuu-book-icon.svg);
+	background-image: url(../img/icons/issuu-book-icon-grey.svg);
 	background-size: 100%;
 	background-position: center;
 	content: "";
+	transition: 0.25s ease-in-out;
+}
+
+.issuuOverlay:hover a::after {
+	background-image: url(../img/icons/issuu-book-icon.svg);
+	transition: 0.25s ease-in-out;
 }
 
 #working-with-community .bullet-points > p:first-of-type {
