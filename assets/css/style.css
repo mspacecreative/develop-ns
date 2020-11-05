@@ -4502,6 +4502,12 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	}
 }
 
+@media (max-width: 850px) and (orientation: landscape) {
+	.pageHeaderBgGrid {
+		height: 100% !important;
+	}
+}
+
 @media (max-width: 320px) and (orientation: landscape) {
 	.tagline h1 {
 		font-size: 45px;
@@ -4825,6 +4831,11 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		margin-top: 104px;
 	}
 	
+	.iconAndTitleContainer {
+		position: absolute;
+		bottom: 0;
+	}
+	
 	.iconAndTitleContainer.noBgColor {
 		margin-left: 2em;
 	}
@@ -4920,7 +4931,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	}
 	
 	.pageHeader .innerContainer .row > .col {
-		padding-top: 200px;
+		padding-top: 300px;
 		padding-bottom: 0;
 	}
 	

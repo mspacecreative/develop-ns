@@ -80,6 +80,12 @@
 	}
 }
 
+@media (max-width: 850px) and (orientation: landscape) {
+	.pageHeaderBgGrid {
+		height: 100%!important;
+	}
+}
+
 @media (max-width: 320px) and (orientation: landscape) {
 	.tagline h1 {
 		font-size: 45px;
@@ -342,6 +348,10 @@
 	.pageHeader {
 		margin-top: 104px;
 	}
+	.iconAndTitleContainer {
+		position: absolute;
+		bottom: 0;
+	}
 	.iconAndTitleContainer.noBgColor {
 		margin-left: 2em;
 	}
@@ -417,7 +427,7 @@
 	    font-size: 80px;
 	}
 	.pageHeader .innerContainer .row > .col {
-		padding-top: 200px;
+		padding-top: 300px;
 		padding-bottom: 0;
 	}
 	.iconAndTitleContainer {
