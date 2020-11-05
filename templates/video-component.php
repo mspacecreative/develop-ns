@@ -242,3 +242,38 @@ if ( have_rows('video_group', 'options') ) :
 		
 	endwhile;
 endif; ?>
+
+<?php 
+if ( have_rows('issuu_embed', 'options') ) {
+	while ( have_rows('issuu_embed', 'options') ) {
+		the_row();
+		$embed = get_sub_field('embed_code', 'options');
+		$embed_url = get_sub_field('embed_url', 'options');
+		$dataattr = get_sub_field('data_attribute', 'options'); ?>
+		
+		<div data-id="<?php echo $dataattr ?>" class="modal">
+			<div class="innerContainer">
+				<button class="closeModalButton">
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+				</button>
+				<?php 
+				if ( $embed_url ) : ?>
+				<a class="button light externalLink" href="<?php echo $embed_url ?>" target="_blank">Open in new tab
+				</a>
+				<?php endif; ?>
+			</div>
+			
+			<div class="modalInner">
+				<div class="iframeContainer">
+					<?php 
+					if ( $embed ) {
+						echo $embed;
+					} ?>
+				</div>
+			</div>
+		</div>
+		
+	<?php 
+	}
+} ?>
