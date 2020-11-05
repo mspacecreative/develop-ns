@@ -2328,12 +2328,12 @@ img {
 	background-size: 100%;
 	background-position: center;
 	content: "";
-	transition: 0.5s ease-in-out;
+	transition: 0.25s ease-in-out;
 }
 
 .issuuOverlay:hover a::after {
 	background-image: url(../img/icons/issuu-book-icon.svg);
-	transition: 0.5s ease-in-out;
+	transition: 0.25s ease-in-out;
 }
 
 #working-with-community .bullet-points > p:first-of-type {
