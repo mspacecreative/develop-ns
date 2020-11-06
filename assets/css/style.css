@@ -4685,10 +4685,6 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		padding-left: 3em;
 	}
 	
-	blockquote p {
-		font-size: 20px;
-	}
-	
 	blockquote::before {
 		font-size: 80px;
 	}
