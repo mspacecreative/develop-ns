@@ -5378,6 +5378,16 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	.heroContentBox {
 		padding-right: 50px;
 	}
+	
+	.carousel, .carousel .slick-list, .carousel .slick-track {
+		height: 100%;
+	}
+	
+	.carousel img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
 }
 
 @media (min-width: 1024px) and (orientation: portrait) {
