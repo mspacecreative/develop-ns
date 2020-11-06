@@ -383,6 +383,9 @@
 	    height: 100%;
 	    max-width: 100%;
 	}
+	#inverness-growth-strategy::after, #georges-island::after {
+		background-size: 120%;
+	}
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
@@ -747,6 +750,9 @@
 	}
 	.pageHeaderBgGrid {
 		height: 100%!important;
+	}
+	#inverness-growth-strategy::after, #georges-island::after {
+		background-size: 100%;
 	}
 }
 
