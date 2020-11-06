@@ -5352,6 +5352,12 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	}
 }
 
+@media (min-width: 376px) and (max-width: 767px) and (orientation: portrait) {
+	.heroContentBox h1 {
+		font-size: 30px;
+	}
+}
+
 @media (min-width: 812px) and (max-width: 850px) and (orientation: landscape) {
 	.pageHeaderBgGrid .col-sm-5 {
 		-ms-flex-preferred-size: 58.33333333%;
