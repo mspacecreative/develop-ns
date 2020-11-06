@@ -5147,6 +5147,10 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		margin-left: 0;
 		padding: 20px;
 	}
+	
+	.heroContentBox h1 {
+		font-size: 30px;
+	}
 }
 
 @media (max-width: 850px) and (orientation: landscape) {
