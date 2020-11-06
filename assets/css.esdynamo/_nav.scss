@@ -101,6 +101,10 @@ header.down ~ .wrapper, header.up ~ .wrapper {
     height: 16px;
 }
 
+.menuContents nav {
+	float: none;
+}
+
 .menuContents .downArrow::before {
     right: calc(100% + 3px);
 }
