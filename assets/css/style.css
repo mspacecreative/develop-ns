@@ -4108,6 +4108,7 @@ html.menOpen, body.menuOpen {
 .menu-item-384 {
 	break-after: column;
 	break-inside: avoid;
+	break-after: always;
 }
 
 .at-label {
