@@ -4489,6 +4489,14 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	.home .photoGrid li:first-of-type {
 		margin-right: 30px;
 	}
+	
+	blockquote p {
+		font-size: 17px;
+	}
+	
+	.blockQuoteAuthor {
+		font-size: 14px;
+	}
 }
 
 @media (max-width: 1280px) {
@@ -4828,7 +4836,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		margin-top: -21px;
 	}
 	
-	#ceo-message, #internet-for-ns-initiative, #peggys-cove {
+	#ceo-message, #internet-for-ns-initiative, #peggys-cove, #internet-for-ns-initiative, #peggys-cove {
 		background-size: 200%;
 	}
 	
