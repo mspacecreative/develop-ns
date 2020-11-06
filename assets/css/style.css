@@ -3371,6 +3371,10 @@ body {
 	/*display: none;*/
 }
 
+.mobileLayout {
+	display: none;
+}
+
 .launching-soon {
 	position: fixed;
 	right: -30px;
@@ -4682,7 +4686,6 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	}
 	
 	.pageHeader .innerContainer .row > .col {
-		padding-top: 200px;
 		padding-bottom: 0;
 	}
 	
@@ -4833,11 +4836,6 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		margin-top: 104px;
 	}
 	
-	.iconAndTitleContainer {
-		position: absolute;
-		bottom: 0;
-	}
-	
 	.iconAndTitleContainer.noBgColor {
 		margin-left: 2em;
 	}
@@ -4860,7 +4858,8 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	}
 	
 	.pageHeader::before, .message-from-board-chair-and-ceo .pageHeader::after {
-		background-size: 75%;
+		background-size: 100%;
+		top: 100px;
 	}
 	
 	.fullSpan {
@@ -4948,13 +4947,13 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	}
 	
 	.pageHeader .innerContainer .row > .col {
-		padding-top: 300px;
+		padding-top: 200px;
 		padding-bottom: 0;
 	}
 	
 	.iconAndTitleContainer {
-		margin-left: -2em;
-		padding: 20px 20px 20px 4em;
+		margin-left: 0;
+		padding: 20px 20px 20px 2em;
 	}
 	
 	.iconAndTitleContainer .imgContainer {
@@ -4962,6 +4961,11 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		float: left;
 		margin-right: 20px;
 		margin-bottom: 0;
+	}
+	
+	.iconAndTitleContainer h1 {
+		margin-bottom: 0;
+		color: #fff;
 	}
 	
 	.pageHeader h1 {
@@ -5124,11 +5128,20 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	.pageHeader .noBgColor h1 {
 		max-width: 75%;
 	}
+	
+	.iconAndTitleContainer.desktopLayout {
+		display: none;
+	}
 }
 
 @media (max-width: 350px) {
 	.pageHeader h1 {
 		font-size: 22px;
+	}
+	
+	.iconAndTitleContainer {
+		margin-left: 0;
+		padding: 20px;
 	}
 }
 
@@ -5328,6 +5341,14 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	
 	.pageHeaderBgGrid {
 		height: 100% !important;
+	}
+}
+
+@media (min-width: 812px) and (max-width: 850px) and (orientation: landscape) {
+	.pageHeaderBgGrid .col-sm-5 {
+		-ms-flex-preferred-size: 58.33333333%;
+		flex-basis: 58.33333333%;
+		max-width: 58.33333333%;
 	}
 }
 

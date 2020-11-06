@@ -26,6 +26,7 @@ function shipwright_header_scripts() {
 add_action( 'wp_enqueue_scripts', 'shipwright_header_scripts' ); // Add Custom Scripts to wp_head
 
 // Load HTML5 Blank conditional scripts
+/*
 function shipwright_conditional_scripts() {
     if ( is_page( array(172, 174, 176) ) ) {
         // Conditional script(s)
@@ -34,6 +35,7 @@ function shipwright_conditional_scripts() {
     }
 }
 add_action( 'wp_print_scripts', 'shipwright_conditional_scripts' ); // Add Conditional Page Scripts
+*/
 
 // Load HTML5 Blank styles
 function shipwright_styles() {

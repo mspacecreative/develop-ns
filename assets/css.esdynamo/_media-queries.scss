@@ -228,7 +228,7 @@
 	    font-size: 80px;
 	}
 	.pageHeader .innerContainer .row > .col {
-		padding-top: 200px;
+		//padding-top: 200px;
 		padding-bottom: 0;
 	}
 	.iconAndTitleContainer {
@@ -348,10 +348,6 @@
 	.pageHeader {
 		margin-top: 104px;
 	}
-	.iconAndTitleContainer {
-		position: absolute;
-		bottom: 0;
-	}
 	.iconAndTitleContainer.noBgColor {
 		margin-left: 2em;
 	}
@@ -369,7 +365,8 @@
 	    max-width: 75%;
 	}
 	.pageHeader::before, .message-from-board-chair-and-ceo .pageHeader::after {
-		background-size: 75%;
+		background-size: 100%;
+		top: 100px;
 	}
 	.fullSpan {
 		height: 200px;
@@ -439,18 +436,22 @@
 	    font-size: 80px;
 	}
 	.pageHeader .innerContainer .row > .col {
-		padding-top: 300px;
+		padding-top: 200px;
 		padding-bottom: 0;
 	}
 	.iconAndTitleContainer {
-		margin-left: -2em;
-		padding: 20px 20px 20px 4em;
+		margin-left: 0;
+		padding: 20px 20px 20px 2em;
 	}
 	.iconAndTitleContainer .imgContainer {
 		width: 80px;
 		float: left;
 		margin-right: 20px;
 		margin-bottom: 0;
+	}
+	.iconAndTitleContainer h1 {
+		margin-bottom: 0;
+		color: #fff;
 	}
 	.pageHeader h1 {
 	    font-size: 32px;
@@ -579,11 +580,18 @@
 	.pageHeader .noBgColor h1 {
 	    max-width: 75%;
 	}
+	.iconAndTitleContainer.desktopLayout {
+		display: none;
+	}
 }
 
 @media (max-width: 350px) {
 	.pageHeader h1 {
 		font-size: 22px;
+	}
+	.iconAndTitleContainer {
+		margin-left: 0;
+		padding: 20px;
 	}
 }
 
@@ -739,6 +747,14 @@
 	}
 	.pageHeaderBgGrid {
 		height: 100%!important;
+	}
+}
+
+@media (min-width: 812px) and (max-width: 850px) and (orientation: landscape) {
+	.pageHeaderBgGrid .col-sm-5 {
+	    -ms-flex-preferred-size: 58.33333333%;
+	    flex-basis: 58.33333333%;
+	    max-width: 58.33333333%;
 	}
 }
 
