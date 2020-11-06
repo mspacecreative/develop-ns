@@ -4825,8 +4825,8 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		margin-top: -21px;
 	}
 	
-	#ceo-message {
-		background-size: auto;
+	#ceo-message, #internet-for-ns-initiative, #peggys-cove {
+		background-size: 200%;
 	}
 	
 	.pageHeader {
@@ -5295,7 +5295,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		margin-bottom: 25px;
 	}
 	
-	#ceo-message {
+	#ceo-message, #internet-for-ns-initiative, #peggys-cove {
 		background-size: 100%;
 	}
 	

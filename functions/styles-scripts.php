@@ -27,10 +27,10 @@ add_action( 'wp_enqueue_scripts', 'shipwright_header_scripts' ); // Add Custom S
 
 // Load HTML5 Blank conditional scripts
 function shipwright_conditional_scripts() {
-    if ( is_page( 'pagenamehere' ) ) {
+    if ( is_page( array(172, 174, 176) ) ) {
         // Conditional script(s)
-        wp_register_script( 'scriptname', get_template_directory_uri() . '/assets/js/scriptname.js', array( 'jquery' ), '1.0.0' );
-        wp_enqueue_script( 'scriptname' );
+        wp_register_script( 'header-scripts', get_template_directory_uri() . '/assets/js/header-scripts.js', array( 'jquery' ), '1.0.0' );
+        wp_enqueue_script( 'header-scripts' );
     }
 }
 add_action( 'wp_print_scripts', 'shipwright_conditional_scripts' ); // Add Conditional Page Scripts

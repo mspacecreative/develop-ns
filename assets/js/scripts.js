@@ -18,26 +18,6 @@
 		});
 		*/
 		
-		// ADJUST PAGE HEADER IMAGE HEIGHT ON MOBILE
-		function adjustPageHeaderImg() {
-			var       pageTitle = $('.iconAndTitleContainer'),
-		   featuredBgImage = $('.pageHeaderBgGrid'),
-		    pageTitleHeight = pageTitle.outerHeight();
-			if ( pageTitle.css('position') == 'absolute' ) {
-				featuredBgImage.css({
-					'height' : 'calc(100% - ' + pageTitleHeight + 'px)'
-				});
-			}
-		}
-		
-		$(window).load(function() {
-			adjustPageHeaderImg();
-		});
-		
-		$(window).resize(function() {
-			adjustPageHeaderImg();
-		});
-		
 		// CHANGE FADE IN DIRECTION ON IMAGE
 		if ( $('.row').hasClass('reverse') ) {
 			var reversedFadeIn = $('.reverse img');
@@ -127,13 +107,21 @@
 			$('.verticalStitch').prepend('<div class="ghostVertStitchContainer"></div>');
 			
 			// SLICK CAROUSEL
-			$(".carousel").slick({
+		
+			var $slider = $(".carousel").slick({
 				fade: true,
 				autoplay: true,
 				arrows: false,
 				autoplaySpeed: 1000,
 				pauseOnHover: false,
 				speed: 2000,
+			})
+			.on('afterChange', function( e, slick, currentSlide ) {
+			    if( currentSlide == 4 ) {
+					$slider.slick("setOption", "autoplaySpeed", 3000);
+			    } else {
+			    	$slider.slick("setOption", "autoplaySpeed", 1000);
+			    }
 			});
 		});
 		
