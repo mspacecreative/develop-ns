@@ -773,6 +773,15 @@
 	}
 }
 
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+	.heroContentBox h1 {
+		font-size: 35px;
+	}
+	.heroContentBox {
+		padding-right: 50px;
+	}
+}
+
 @media (min-width: 1024px) and (orientation: portrait) {
 	.launching-soon {
 		bottom: -35px;
