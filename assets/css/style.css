@@ -4453,11 +4453,23 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		margin-right: 15%;
 		display: block;
 	}
+	
+	.mobileOnly {
+		display: none;
+	}
 }
 
 @media (max-width: 980px) {
 	.socialMedia {
 		display: none;
+	}
+	
+	.socialMedia.inline {
+		display: block;
+	}
+	
+	.mobileOnly {
+		display: block;
 	}
 	
 	#queens-marque {

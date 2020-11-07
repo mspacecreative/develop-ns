@@ -27,11 +27,20 @@
 		margin-right: 15%;
 		display: block;
 	}
+	.mobileOnly {
+		display: none;
+	}
 }
 
 @media (max-width: 980px) {
 	.socialMedia {
 		display: none;
+	}
+	.socialMedia.inline {
+		display: block;
+	}
+	.mobileOnly {
+		display: block;
 	}
 	#queens-marque {
 	    padding: 4em 0;

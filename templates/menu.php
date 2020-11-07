@@ -13,6 +13,20 @@
 				$address = get_field('address', 'options');
 				if ( $address ) {
 					echo '<p>' . $address . '</p>';
+				}
+				if ( have_rows('channels', 'options') ) {
+				echo '<div class="socialMedia inline">
+						<p style="margin-bottom: 10px;">Follow us on</p>
+					  	<ul>';
+				while ( have_rows('channels', 'options') ) {
+					the_row();
+					$link = get_sub_field('link', 'options');
+					$icon = get_sub_field('icon', 'options');
+										
+					echo '<li><a href="' . $link . '" target="_blank"><i class="fa ' . $icon . '"></i></a></li>';
+				}
+				echo 	'</ul>
+					</div>';
 				} ?>
 			</div>
 			<p>
