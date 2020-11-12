@@ -19,10 +19,6 @@
 	<body <?php body_class(); ?>>
 		
 		<!-- MOBILE NAV -->
-		<?php get_template_part('templates/mobile-nav'); ?>
-		<!-- / MOBILE NAV -->
-		
-		<!-- MOBILE NAV -->
 		<?php get_template_part('templates/menu'); ?>
 		<!-- / MOBILE NAV -->
 		
