@@ -5180,6 +5180,10 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		font-size: 45px;
 	}
 	
+	.infoGraphicContainer {
+		max-width: 75%;
+	}
+	
 	.toggle {
 		display: none;
 	}
