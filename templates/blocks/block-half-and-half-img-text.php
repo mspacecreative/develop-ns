@@ -133,8 +133,21 @@ if ( $blockanchor && $bgcolor == 'light' ): ?>
 	 		$heading = get_sub_field('heading');
 			$content = get_sub_field('content');
 			$contenttype = get_sub_field('content_type');
+			$colspacing = get_sub_field('column_bottom_spacing');
 	 		
-	 		if ( $colratio == 'three-fifth-two-fifth' ): ?>
+	 		if ( $colratio == 'three-fifth-two-fifth' && $colspacing ): ?>
+			<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 col">
+			<?php elseif ( $colratio == 'two-fifth-three-fifth' && $colspacing ): ?>
+			<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 col">
+			<?php elseif ( $colratio == 'two-third-one-third' && $colspacing ): ?>
+			<div class="col-lg-8 col-md-6 col-sm-12 col-xs-12 col">
+			<?php elseif ( $colratio == 'one-third-two-third' && $colspacing ): ?>
+			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col">
+			<?php elseif ( $colratio == 'three-quarter-one-quarter' && $colspacing ): ?>
+			<div class="col-lg-10 col-md-6 col-sm-12 col-xs-12 col">
+			<?php elseif ( $colratio == 'one-quarter-three-quarter'&& $colspacing ): ?>
+			<div class="col-lg-2 col-md-6 col-sm-12 col-xs-12 col">
+			<?php elseif ( $colratio == 'three-fifth-two-fifth' ): ?>
 			<div class="col-lg-7 bottomMarginMobile col-md-6 col-sm-12 col-xs-12 col">
 			<?php elseif ( $colratio == 'two-fifth-three-fifth' ): ?>
 			<div class="col-lg-5 bottomMarginMobile col-md-6 col-sm-12 col-xs-12 col">
@@ -242,8 +255,22 @@ if ( $blockanchor && $bgcolor == 'light' ): ?>
 	 		$contenttype = get_sub_field('content_type');
 	 		$heading = get_sub_field('heading_right_col');
 	 		$contentrightcol = get_sub_field('content_right_col');
+			$colspacing = get_sub_field('column_bottom_spacing');
 			
-			if ( $colratio == 'three-fifth-two-fifth' ): ?>
+			if ( $colratio == 'three-fifth-two-fifth' && $colspacing ): ?>
+			<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 col">
+			<?php elseif ( $colratio == 'two-fifth-three-fifth' && $colspacing ): ?>
+			<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 col">
+			<?php elseif ( $colratio == 'two-third-one-third' && $colspacing ): ?>
+			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col">
+			<?php elseif ( $colratio == 'one-third-two-third' && $colspacing ): ?>
+			<div class="col-lg-8 col-md-6 col-sm-12 col-xs-12 col">
+			<?php elseif ( $colratio == 'three-quarter-one-quarter' && $colspacing ): ?>
+			<div class="col-lg-2 col-md-6 col-sm-12 col-xs-12 col">
+			<?php elseif ( $colratio == 'one-quarter-three-quarter' && $colspacing ): ?>
+			<div class="col-lg-10 col-md-6 col-sm-12 col-xs-12 col">
+			
+			<?php elseif ( $colratio == 'three-fifth-two-fifth' ): ?>
 			<div class="col-lg-5 bottomMarginMobile col-md-6 col-sm-12 col-xs-12 col">
 			<?php elseif ( $colratio == 'two-fifth-three-fifth' ): ?>
 			<div class="col-lg-7 bottomMarginMobile col-md-6 col-sm-12 col-xs-12 col">
