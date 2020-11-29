@@ -387,7 +387,7 @@
 	.fullSpan {
 		height: 200px;
 	}
-	.fullSpan > a {
+	.fullSpan > a, .wp-block-image .size-full {
 		height: 100%;
 	}
 	.wp-block-image.size-full img, .wp-block-image .size-full img {

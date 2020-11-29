@@ -4895,7 +4895,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		height: 200px;
 	}
 	
-	.fullSpan > a {
+	.fullSpan > a, .wp-block-image .size-full {
 		height: 100%;
 	}
 	
