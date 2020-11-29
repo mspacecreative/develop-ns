@@ -2370,6 +2370,10 @@ figure.wp-block-image {
 	margin: 0;
 }
 
+.wp-block-image.size-full, .wp-block-image.size-full img {
+	width: 100%;
+}
+
 .wp-block-image.size-full img {
 	width: 100%;
 }
