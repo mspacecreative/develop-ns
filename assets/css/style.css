@@ -4899,7 +4899,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		height: 100%;
 	}
 	
-	.wp-block-image.size-full img {
+	.wp-block-image.size-full img, .wp-block-image .size-full img {
 		width: 100%;
 		object-fit: cover;
 		height: 100%;
