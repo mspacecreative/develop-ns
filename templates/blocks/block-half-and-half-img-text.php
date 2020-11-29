@@ -159,6 +159,8 @@ if ( $blockanchor && $bgcolor == 'light' ): ?>
 			<div class="col-lg-10 bottomMarginMobile col-md-6 col-sm-12 col-xs-12 col">
 			<?php elseif ( $colratio == 'one-quarter-three-quarter' ): ?>
 			<div class="col-lg-2 bottomMarginMobile col-md-6 col-sm-12 col-xs-12 col">
+			<?php elseif ( $colspacing ) : ?>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col">
 			<?php else : ?>
 			<div class="col-lg-6 bottomMarginMobile col-md-6 col-sm-12 col-xs-12 col">
 			<?php endif;
@@ -282,6 +284,8 @@ if ( $blockanchor && $bgcolor == 'light' ): ?>
 			<div class="col-lg-2 bottomMarginMobile col-md-6 col-sm-12 col-xs-12 col">
 			<?php elseif ( $colratio == 'one-quarter-three-quarter' ): ?>
 			<div class="col-lg-10 bottomMarginMobile col-md-6 col-sm-12 col-xs-12 col">
+			<?php elseif ( $colspacing ) : ?>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col">
 			<?php else : ?>
 			<div class="col-lg-6 bottomMarginMobile col-md-6 col-sm-12 col-xs-12 col">
 			<?php endif;
