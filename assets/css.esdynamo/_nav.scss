@@ -315,6 +315,6 @@ span.at-icon-wrapper  {
 }
 
 // ERROR PAGE
-.error404 .socialMedia {
+.error404 .menuContainer ~ .socialMedia {
 	display: none;
 }

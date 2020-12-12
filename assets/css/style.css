@@ -4155,7 +4155,7 @@ span.at-icon-wrapper {
 	transition: 0.25s ease-in-out;
 }
 
-.error404 .socialMedia {
+.error404 .menuContainer ~ .socialMedia {
 	display: none;
 }
 
