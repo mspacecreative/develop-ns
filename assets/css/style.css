@@ -4155,6 +4155,10 @@ span.at-icon-wrapper {
 	transition: 0.25s ease-in-out;
 }
 
+.error404 .socialMedia {
+	display: none;
+}
+
 /* Slider */
 
 .slick-slider {

@@ -1,24 +1,13 @@
-<?php get_header(); ?>
+<?php 
+get_header(); ?>
 
-	<main role="main" aria-label="Content">
-		<!-- section -->
-		<section>
-
-			<!-- article -->
-			<article id="post-404">
-
-				<h1><?php esc_html_e( 'Page not found', 'html5blank' ); ?></h1>
-				<h2>
-					<a href="<?php echo esc_url( home_url() ); ?>"><?php esc_html_e( 'Return home?', 'html5blank' ); ?></a>
-				</h2>
-
-			</article>
-			<!-- /article -->
-
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
+	<section class="section">
+		<div class="innerContainer" style="padding-top: 6em; padding-bottom: 4em;">
+			<h3><?php esc_html_e( 'Page not found', 'html5blank' ); ?></h3>
+			<p>
+				The page you requested does not exist. Please use the navigation above or click <a href="<?php echo esc_url( home_url() ); ?>"><?php esc_html_e( 'here', 'html5blank' ); ?></a> to return to the home page.
+			</p>
+		</div>
+	</section>
 
 <?php get_footer(); ?>
