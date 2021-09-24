@@ -177,3 +177,20 @@ figcaption {
     margin: auto;
 }
 */
+
+.flex-gallery {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.flex-gallery li {
+	margin: 4em 0;
+}
+.flex-gallery li::before {
+	display: none;
+}
+
+// ICONS
+.ne-arrow-fill {
+	fill: $brandNavy;
+}

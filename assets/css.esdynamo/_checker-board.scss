@@ -68,14 +68,11 @@
 .checkerBoardContainer:nth-of-type(even) .verticalDashedLine {
 	background-position: right 2em top;
 }
-.homePagePagesFeed:nth-of-type(even) {
+.homePagePagesFeed:nth-of-type(odd) {
 	flex-direction: row-reverse;
 }
 .homePagePagesFeed:nth-of-type(even) .ghostVertStitchContainer {
 	background-position: right top;
-}
-.homePagePagesFeed:nth-last-of-type(even) > .col {
-	text-align: right;
 }
 //.homePagePagesFeed:nth-last-of-type(even) .col-inner {
 	//display: flex;

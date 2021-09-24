@@ -22,6 +22,18 @@
 	background-color: transparent;
 	color: $brandBlue;
 }
+.button.navy_bg {
+	background-color: $brandNavy;
+	border-color: $brandNavy;
+}
+.button.orange_bg {
+	background-color: $brandOrange;
+	border-color: $brandOrange;
+}
+.button.blue_bg {
+	background-color: $brandBlue;
+	border-color: $brandBlue;
+}
 .orange_bg .button.light {
 	color: $brandOrange;
 }

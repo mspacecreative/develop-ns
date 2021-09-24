@@ -227,7 +227,7 @@ footer .row .col:last-of-type {
 .horizontalStitchTop, .horizontalStitchBottom, #experience-quote, #queens-marque {
 	position: relative;
 }
-.horizontalStitchBottom::after, .horizontalStitchTop::before, #experience-quote::after, #queens-marque::after, , #queens-marque::before, #cove::after, #marine-visitation-plan::after {
+.horizontalStitchBottom::after, .horizontalStitchTop::before, #experience-quote::after, #queens-marque::after, , #queens-marque::before, #cove::after, #marine-visitation-plan::after, .dashed-divider::after {
 	position: absolute;
     width: 100%;
     content: "";

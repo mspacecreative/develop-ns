@@ -49,14 +49,21 @@ function shipwright_styles() {
         wp_enqueue_style( 'shipwrightcssmin' );
     }
     // MAIN CSS
-    wp_register_style( 'main', get_template_directory_uri() . '/assets/css/style.css', array(), null );
+    global $ver_num;
+  	$ver_num = mt_rand();
+    wp_register_style( 'main', get_template_directory_uri() . '/assets/css/style.css', array(), $ver_num, 'all' );
     // REGISTER MAIN CSS
     wp_enqueue_style( 'main' );
     
-    // ADOBE FONTS
-    //wp_register_style( 'adobe-fonts', 'https://use.typekit.net/avx4yiz.css', array(), null );
-    // Register CSS
-    //wp_enqueue_style( 'adobe-fonts' );
+    // MODAL SCRIPT
+    wp_register_script('modal-script', get_template_directory_uri() . '/assets/js/modal.js', array('jquery'), false, true);
+    // Localize the script with new data
+    $script_data_array = array(
+        'ajaxurl' => admin_url( 'admin-ajax.php' ),
+        'security' => wp_create_nonce( 'open_modal' ),
+    );
+    wp_localize_script( 'modal-script', 'developns', $script_data_array );
+    wp_enqueue_script('modal-script');
     
     // SLICK SCRIPT
     wp_register_script('slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), null, true );
@@ -67,6 +74,14 @@ function shipwright_styles() {
 	wp_register_script('aos', 'https://unpkg.com/aos@2.3.1/dist/aos.js', array('jquery'), null, true );
 	// Enqueue Scripts
 	wp_enqueue_script( 'aos' );
+	
+	// BOOTSTRAP CSS
+	wp_register_style( 'bootstrapcss', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), null );
+	wp_enqueue_style( 'bootstrapcss' );
+	
+	// BOOTSTRAP JS
+	wp_register_script('bootstrapjs', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', array('jquery'), false, true);
+    wp_enqueue_script('bootstrapjs');
 	
 	// Custom scripts
     wp_register_script('shipwrightscripts', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), null, true );

@@ -13,6 +13,17 @@ $colratio = get_field('column_ratio');
 $removeBulletSpacing = get_field('remove_spacing_between_bullet_points');
 $gutters = get_field('gutter_space');
 
+// CUSTOM ID
+$id = '' . $block['id'];
+if ( !empty($block['anchor']) ) {
+	$id = $block['anchor'];
+}
+// CUSTOM CLASS	
+$className = '';
+if( !empty($block['className']) ) {
+	$className .= ' ' . $block['className'];
+}
+
 if ( $blockanchor && $bgcolor == 'light' ): ?>
 <div id="<?php echo $blockanchor ?>" class="section lightbg borderTopGoldGradient">
 
@@ -41,7 +52,7 @@ if ( $blockanchor && $bgcolor == 'light' ): ?>
 <div id="<?php echo $blockanchor ?>" class="section lightbg">
 
 <?php else : ?>
-<div class="section lightbg">
+<div<?php if ( $id ): echo ' id="'; echo $id; echo '"'; endif; ?> class="section lightbg">
 
 <?php endif;
 

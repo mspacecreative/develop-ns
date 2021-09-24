@@ -24,12 +24,10 @@
 			
 		</footer>
 		<!-- /footer -->
-			
-		<!-- VIDEO COMPONENT -->
-		<?php get_template_part('templates/video-component'); ?>
-		<!-- / SOCIAL COMPONENT -->
 
-		<?php wp_footer(); ?>
+		<?php echo do_shortcode('[modal]');
+		
+		wp_footer(); ?>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36691022-5"></script>

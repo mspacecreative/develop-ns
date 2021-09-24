@@ -6,24 +6,36 @@
 .innerContainer.maxWidth850 {
 	max-width: 980px;
 }
-.topBottomPadding {
+.innerContainer.topBottomPadding,
+.innerContainer.top-bottom-padding,
+.topBottomPadding,
+.top-bottom-padding {
 	padding-bottom: 4em;
 	padding-top: 4em;
 }
-.topPadding {
+.innerContainer.topPadding,
+.innerContainer.top-padding,
+.topadding,
+.top-padding {
 	padding-top: 4em;
 }
+.innerContainer.bottomPadding,
+.innerContainer.bottom-padding,
+.bottomPadding,
 .bottom-padding {
 	padding-bottom: 4em;
 }
+section {
+	position: relative;
+}
 // ROWS & COLUMNS
 .row.gutter_space_1 {
-	margin-left: -1.5rem;
-	margin-right: -1.5rem;
+	margin-left: 0;
+	margin-right: 0;
 }
 .row.gutter_space_1 > .col {
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+	padding-left: 0;
+	padding-right: 0;
 }
 .row.gutter_space_2 {
 	margin-left: -2rem;
@@ -112,7 +124,7 @@
 .pageHeader .innerContainer::before, .ghostVertStitchContainer, .hero .innerContainer::before {
 	position: absolute;
     top: 0;
-    left: 4em;
+    left: 0;
     height: 100%;
     width: 1px;
     background-image: url(../img/textures/vertical-dashed-line-1px.png);
@@ -133,4 +145,14 @@
 }
 #working-with-community h2 {
 	padding-top: 80px;
+}
+
+.flex-spacer {
+	height: 2em;
+}
+.flex-spacer-tall {
+	height: 4em;
+}
+.hidden {
+	opacity: .5;
 }

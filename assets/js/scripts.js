@@ -16,13 +16,14 @@
 		$(window).load(function() {
 			$('body').fadeIn('slow');
 		});
-		*/
+		
 		
 		// CHANGE FADE IN DIRECTION ON IMAGE
 		if ( $('.row').hasClass('reverse') ) {
 			var reversedFadeIn = $('.reverse img');
 			reversedFadeIn.attr('data-aos', 'fade-right');
 		}
+		*/
 		
 		// AOS INIT
 		$(function() {
@@ -97,6 +98,13 @@
 		});
 		
 		$(document).ready(function() {
+			// LOOP THROUGH ANIMATED IMAGE LIST AND CONFIG ANIMATION TIMING
+			var plus = 0;
+			$('.flex-gallery > .aos-animate:gt(0)').each(function(i) {
+				plus += 150;
+				$(this).attr('data-aos-delay', plus);
+			});
+			
 			// APPEND ICONS TO MENU ITEMS
 			$('.menuToggle a').append('<button class="hamburger hamburger--spin" type="button"><span class="hamburger-box"></span><span class="hamburger-inner"></span></button>');
 			$('.downloadFinancials a').append('<span class="downArrowContainer"><span class="downArrow">&nbsp;</span></span>');
@@ -104,7 +112,7 @@
 			$('.topLeftCaption').find('figcaption').wrap('<div class="innerContainer absoluteCaptionInnerContainer"></div>');
 			
 			// ADD GHOST CONTAINER
-			$('.verticalStitch').prepend('<div class="ghostVertStitchContainer"></div>');
+			//$('.verticalStitch').prepend('<div class="ghostVertStitchContainer"></div>');
 			
 			// SLICK CAROUSEL
 		

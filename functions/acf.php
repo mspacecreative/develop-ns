@@ -15,8 +15,27 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'titles', 'page links' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
+		));
+		
+		// register splash block
+		acf_register_block(array(
+			'name'				=> 'video',
+			'title'				=> __('Block: Video'),
+			'description'		=> __('Video with featured image overlaid'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'video-alt2',
+			'keywords'			=> array( 'video', 'YouTube embed' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register splash block
@@ -28,8 +47,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'background carousel', 'intro', 'landing page' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register splash block
@@ -41,8 +63,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'background image', 'content', 'CTA' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register product boxes
@@ -54,8 +79,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'products', 'content', 'repeatable' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register download boxes
@@ -67,8 +95,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'downloads', 'content', 'repeatable' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register full span img text left block
@@ -80,8 +111,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'flex layout', 'content' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register 50/50 colour overlay text block
@@ -93,8 +127,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'variable columns', 'layout' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register three column layout block
@@ -106,8 +143,27 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'two columns', 'row' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
+		));
+		
+		// register three column layout block
+		acf_register_block(array(
+			'name'				=> 'two-column',
+			'title'				=> __('Two Column'),
+			'description'		=> __('Two column block with flexible content'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'align-pull-right',
+			'keywords'			=> array( 'two columns', 'flexible content' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register cta block
@@ -119,8 +175,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'grid layout', 'columns' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register events block
@@ -132,8 +191,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'image', 'promotional' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register two third one third block
@@ -145,8 +207,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'full width', 'columns' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register flexbox block
@@ -158,8 +223,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'carousel', 'photo gallery' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register content block
@@ -184,8 +252,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'shortcode', 'page anchor link' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register column block
@@ -197,8 +268,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'columns', 'variable' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register single testimonial block
@@ -210,8 +284,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'testimonial', 'quote' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register home page slider block
@@ -223,8 +300,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'carousel', 'logos' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register content block
@@ -236,8 +316,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'layout', 'editor' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register product block
@@ -249,8 +332,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'layout', 'editor' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register accordion block
@@ -262,8 +348,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'tabs', 'accordion' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register brand grid / carousel
@@ -275,8 +364,11 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'image grid', 'carousel' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 
 	}

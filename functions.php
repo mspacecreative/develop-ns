@@ -29,6 +29,7 @@ if ( function_exists( 'add_theme_support' ) ) {
     add_image_size( 'medium', 250, '', true ); // Medium Thumbnail.
     add_image_size( 'small', 120, '', true ); // Small Thumbnail.
     add_image_size( 'custom-size', 700, 200, true ); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    add_image_size( 'anamorphic', 1600, 567, true ); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
     // Enables post and comment RSS feed links to head.
     add_theme_support( 'automatic-feed-links' );
@@ -366,3 +367,5 @@ include 'functions/acf.php';
 include 'functions/gutenberg.php';
 include 'functions/tinymce.php';
 include 'functions/shortcodes.php';
+include 'functions/modal.php';
+include 'functions/routing.php';
