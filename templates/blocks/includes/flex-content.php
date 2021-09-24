@@ -5,9 +5,10 @@ while ( have_rows('flexible_content') ): the_row();
 	if ( get_row_layout() == 'image_list' ):
 	$flexgallery = get_sub_field('flex_gallery');
 	$animate = get_sub_field('animate');
+	$maxwidth = get_sub_field('max_width');
 					
 		if ( $flexgallery ): ?>
-		<ul class="flex-gallery">
+		<ul class="flex-gallery"<?php if ($maxwidth): echo ' style="max-width: '; echo $maxwidth; echo ';"'; endif; ?>>
 							
 			<?php foreach ( $flexgallery as $fleximage ): ?>
 			<li<?php if ($animate): echo ' data-aos="fade-right"'; endif; ?>>
