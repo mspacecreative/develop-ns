@@ -58,7 +58,7 @@ switch ($themecolour) {
 				$label = get_sub_field('article_title');
 				$link = get_sub_field('article_link');
 				echo 
-				'<li><a href="' . $link . '">' . $label . '</a></li>';
+				'<li><a href="' . $link . '"><h3>' . $label . '</h3></a></li>';
 			}
 			echo
 			'</ul>';

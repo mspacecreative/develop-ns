@@ -101,3 +101,13 @@ blockquote p {
 	font-style: italic;
 	font-weight: 600;
 }
+
+// ARTICLE LINKS
+.article-links {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.article-links li {
+	margin-bottom: 1em;
+}
