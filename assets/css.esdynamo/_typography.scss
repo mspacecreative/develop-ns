@@ -111,3 +111,13 @@ blockquote p {
 .article-links li {
 	margin-bottom: 1em;
 }
+.article-links a {
+	position: relative;
+	padding-right: 30px;
+}
+.article-links .downArrowContainer {
+	transform: rotate(-135deg);
+	position: absolute;
+	right: 0;
+	top: 0;
+}

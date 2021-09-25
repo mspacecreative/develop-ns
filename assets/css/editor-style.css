@@ -1359,6 +1359,18 @@ blockquote p {
 	margin-bottom: 1em;
 }
 
+.article-links a {
+	position: relative;
+	padding-right: 30px;
+}
+
+.article-links .downArrowContainer {
+	transform: rotate(-135deg);
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
 img {
 	display: block;
 	max-width: 100%;
