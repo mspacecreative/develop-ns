@@ -6,6 +6,7 @@ $bgimgalign = get_field('background_image_position');
 $contenttype = get_field('content_type');
 $aligncolumns = get_field('align_columns');
 $rowheading = get_field('row_heading');
+$subrowheading = get_field('sub_row_heading');
 $headingalignment = get_field('heading_alignment');
 $textcolor = get_field('text_colour');
 $headingcolor = get_field('heading_colour');
@@ -159,6 +160,9 @@ if ( $bgimg ): ?>
 		<?php 
 		if ( $rowheading ) {
 		echo '<h2 ' . $align . '>' . $rowheading . '</h2>';
+		}
+		if ($subrowheading) {
+		echo '<h3 ' . $align . '>' . $subrowheading . '</h3>';
 		}
 		?>
 				
