@@ -2561,20 +2561,41 @@ blockquote p {
 	list-style: none;
 }
 
+.article-links h3 {
+	color: #000;
+}
+
 .article-links li {
-	margin-bottom: 1em;
+	margin-bottom: 5px;
+}
+
+.article-links li:last-of-type {
+	margin-bottom: 0;
 }
 
 .article-links a {
 	position: relative;
 	padding-right: 30px;
+	display: inline-block;
 }
 
 .article-links .downArrowContainer {
 	transform: rotate(-135deg);
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 1px;
+	width: 20px;
+	height: 20px;
+}
+
+.article-links .downArrow {
+	width: 3px;
+	height: 18px;
+}
+
+.article-links .downArrow::before, .article-links .downArrow::after {
+	width: 3px;
+	height: 10px;
 }
 
 img {
