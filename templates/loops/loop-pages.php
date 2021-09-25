@@ -79,7 +79,7 @@ switch ($themecolour) {
 			</div>
 		</div>
 		
-		<div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12 no-right-padding checker-board-img<?php if ($themecolour): echo $themecolour; endif; ?>">
+		<div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12 no-right-padding checker-board-img<?php if ($theme): echo $theme; endif; ?>">
 			
 			<div class="col-inner">
 			<?php
