@@ -43,25 +43,32 @@ switch ($themecolour) {
 			<div class="col-inner">
 			<?php 
 			if ( $pagetitle ) {
-				echo 
-				'<h2>' . $pagetitle . '</h2>';
+			echo 
+			'<h2>' . $pagetitle . '</h2>';
 			}
-			if ( $mainheading && $subheading ) {
+			if ( $mainheading ) {
+			echo 
+			'<h3><strong>' . $mainheading . '</strong></h3>';
+			}
+			if (have_rows('article_links')) {
+			echo
+			'<ul class="article-links">';
+			while (have_rows('article_links')) {
+				the_row();
+				$label = get_sub_field('article_title');
+				$link = get_sub_field('article_link');
 				echo 
-				'<h3><strong><span style="text-transform: uppercase;">' . $mainheading . '</span><br />' . $subheading . '</strong></h3>';
-			} elseif ( $mainheading ) {
-				echo 
-				'<h3><strong>' . $mainheading . '</strong></h3>';
-			} elseif ( $subheading ) {
-				echo 
-				'<h3><strong>' . $subheading . '</strong></h3>';
+				'<li><a href="' . $link . '">' . $label . '</a></li>';
+			}
+			echo
+			'</ul>';
 			}
 			if ( $excerpt ) {
 				echo 
 				'<p>' . $excerpt . '</p>';
 			} ?>
 			
-			<a class="button<?php if ($themecolour): echo $themecolour; endif; ?>" href="<?php get_the_permalink(); ?>"><?php echo __('READ THE STORIES'); ?></a>
+			<a class="button<?php if ($themecolour): echo $themecolour; endif; ?>" href="<?php get_the_permalink(); ?>"><?php echo __('READ ALL THE STORIES'); ?></a>
 			</div>
 		</div>
 		
