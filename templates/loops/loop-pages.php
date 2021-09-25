@@ -75,7 +75,7 @@ switch ($themecolour) {
 				'<p>' . $excerpt . '</p>';
 			} ?>
 			
-			<a class="button<?php if ($theme): echo $theme; endif; ?>" href="<?php get_the_permalink($loop->ID); ?>"><?php echo __('READ ALL THE STORIES'); ?></a>
+			<a class="button<?php if ($theme): echo $theme; endif; ?>" href="<?php echo the_permalink(); ?>"><?php echo __('READ ALL THE STORIES'); ?></a>
 			</div>
 		</div>
 		
