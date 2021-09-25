@@ -138,3 +138,21 @@ blockquote p {
 	width: 3px;
 	height: 10px;
 }
+.article-links ~ .button {
+	margin-top: 1em;
+}
+.blue-arrow .downArrow,
+.blue-arrow .downArrow:before,
+.blue-arrow .downArrow:after {
+	background-color: $brandBlue;
+}
+.navy-arrow .downArrow,
+.navy-arrow .downArrow:before,
+.navy-arrow .downArrow:after {
+	background-color: $brandNavy;
+}
+.orange-arrow .downArrow,
+.orange-arrow .downArrow:before,
+.orange-arrow .downArrow:after {
+	background-color: $brandOrange;
+}

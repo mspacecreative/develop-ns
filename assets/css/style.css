@@ -2598,6 +2598,22 @@ blockquote p {
 	height: 10px;
 }
 
+.article-links ~ .button {
+	margin-top: 1em;
+}
+
+.blue-arrow .downArrow, .blue-arrow .downArrow:before, .blue-arrow .downArrow:after {
+	background-color: #008fb7;
+}
+
+.navy-arrow .downArrow, .navy-arrow .downArrow:before, .navy-arrow .downArrow:after {
+	background-color: #012a3c;
+}
+
+.orange-arrow .downArrow, .orange-arrow .downArrow:before, .orange-arrow .downArrow:after {
+	background-color: #f36f00;
+}
+
 img {
 	display: block;
 	max-width: 100%;

@@ -25,21 +25,21 @@ $size = 'icon';
 
 switch ($themecolour) {
 	case 'blue':
-		$themecolour = ' blue_bg';
+		$theme = ' blue_bg';
 		break;
 	case 'orange':
-		$themecolour = ' orange_bg';
+		$theme = ' orange_bg';
 		break;
 	case 'navy':
-		$themecolour = ' navy_bg';
+		$theme = ' navy_bg';
 		break;
 	default:
-		$themecolour = ' orange_bg';
+		$theme = ' orange_bg';
 } ?>
 
 	<div class="row half_half_section homePagePagesFeed verticalStitch">
 		
-		<div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12 who_we_are checker-board-content">
+		<div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12 who_we_are checker-board-content<?php if ($themecolour == 'blue'): echo ' blue-arrow'; elseif ($themecolour == 'orange'): echo ' orange-arrow'; elseif ($themecolour == 'navy'): echo ' navy-arrow'; endif; ?>">
 			<div class="col-inner">
 			<?php 
 			if ( $pagetitle ) {
@@ -75,7 +75,7 @@ switch ($themecolour) {
 				'<p>' . $excerpt . '</p>';
 			} ?>
 			
-			<a class="button<?php if ($themecolour): echo $themecolour; endif; ?>" href="<?php get_the_permalink(); ?>"><?php echo __('READ ALL THE STORIES'); ?></a>
+			<a class="button<?php if ($theme): echo $theme; endif; ?>" href="<?php get_the_permalink(); ?>"><?php echo __('READ ALL THE STORIES'); ?></a>
 			</div>
 		</div>
 		
