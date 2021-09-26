@@ -988,16 +988,19 @@ html.modalOpen {
 	position: relative;
 }
 
-.verticalStitchRight:after, .verticalStitchLeft::after {
+/*
+.verticalStitchRight:after,
+.verticalStitchLeft::after {
 	position: absolute;
-	top: 0;
-	height: 100%;
-	width: 1px;
-	background-image: url(../img/textures/vertical-dashed-line-1px.png);
-	content: "";
-	z-index: 1;
-	background-repeat: repeat-y;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-image: url(../img/textures/vertical-dashed-line-1px.png);
+    content: "";
+    z-index: 1;
+    background-repeat: repeat-y;
 }
+*/
 
 .verticalStitchRight .ghostVertStitchContainer {
 	background-position: right;

@@ -91,6 +91,7 @@ html.modalOpen {
 .verticalStitchLeft, .verticalStitchRight {
 	position: relative;
 }
+/*
 .verticalStitchRight:after,
 .verticalStitchLeft::after {
 	position: absolute;
@@ -102,6 +103,7 @@ html.modalOpen {
     z-index: 1;
     background-repeat: repeat-y;
 }
+*/
 .verticalStitchRight .ghostVertStitchContainer {
 	background-position: right;
 }
