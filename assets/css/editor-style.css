@@ -1623,6 +1623,10 @@ figcaption {
 	margin: 4em 0;
 }
 
+.flex-gallery li:last-of-type {
+	margin-bottom: 0;
+}
+
 .flex-gallery li::before {
 	display: none;
 }
