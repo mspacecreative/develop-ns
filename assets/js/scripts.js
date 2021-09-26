@@ -112,7 +112,7 @@
 			$('.topLeftCaption').find('figcaption').wrap('<div class="innerContainer absoluteCaptionInnerContainer"></div>');
 			
 			// ADD GHOST CONTAINER
-			//$('.verticalStitch').prepend('<div class="ghostVertStitchContainer"></div>');
+			$('.verticalStitchRight, .verticalStitchLeft').prepend('<div class="ghostVertStitchContainer"></div>');
 			
 			// SLICK CAROUSEL
 		
