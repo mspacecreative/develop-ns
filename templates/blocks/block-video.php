@@ -2,10 +2,30 @@
 $featuredimg = get_field('featured_image');
 $featvideo = get_field('featured_video');
 $featuredimgsize = 'anamorphic';
+$textureelement = get_field('texture_element');
+$tapeplacement = get_field('tape_texture_placement');
+$dashedlineplacement = get_field('dashed_line_placement');
+
+switch ($tapeplacement) {
+	case 'top-left':
+		$tapeplacement = ' tape-top-left';
+		break;
+	case 'top-right':
+		$tapeplacement = ' tape-top-right';
+		break;
+	case 'bottom-left':
+		$tapeplacement = ' tape-bottom-left';
+		break;
+	case 'bottom-right':
+		$tapeplacement = ' tape-bottom-right';
+		break;
+	default:
+		$tapeplacement = '';
+}
 
 if ($featuredimg): ?>
 <section class="video-section">
-	<div class="home-featured-img photoZoom videoOverlay">
+	<div class="photoZoom videoOverlay<?php if ($tapeplacement): echo $tapeplacement; endif; if ($dashedlineplacement == 'left'): echo ' verticalStitchLeft'; elseif ($dashedlineplacement == 'right'): echo ' verticalStitchRight'; endif; ?>">
 				
 		<?php 
 		if ($featvideo):
