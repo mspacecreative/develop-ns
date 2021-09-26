@@ -102,9 +102,9 @@ html.modalOpen {
     z-index: 1;
     background-repeat: repeat-y;
 }
-.verticalStitchRight:after {
-	right: 5em;
+.verticalStitchRight .ghostVertStitchContainer {
+	background-position: right;
 }
-.verticalStitchLeft:after {
-	left: 5em;
+.verticalStitchLeft .ghostVertStitchContainer {
+	background-position: left;
 }
