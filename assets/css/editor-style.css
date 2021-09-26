@@ -984,6 +984,30 @@ html.modalOpen {
 	position: relative;
 }
 
+.verticalStitch {
+	position: relative;
+}
+
+.verticalStitchRight:after, .verticalStitchLeft::after {
+	position: absolute;
+	content: '';
+	top: 0;
+	height: 100%;
+	width: 1px;
+	background-image: url(../img/textures/vertical-dashed-line-1px.png);
+	content: "";
+	z-index: 1;
+	background-repeat: repeat-y;
+}
+
+.verticalStitchRight:after {
+	right: 5em;
+}
+
+.verticalStitchLeft:after {
+	left: 5em;
+}
+
 /*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {

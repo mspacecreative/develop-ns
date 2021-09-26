@@ -2190,6 +2190,30 @@ html.modalOpen {
 	position: relative;
 }
 
+.verticalStitch {
+	position: relative;
+}
+
+.verticalStitchRight:after, .verticalStitchLeft::after {
+	position: absolute;
+	content: '';
+	top: 0;
+	height: 100%;
+	width: 1px;
+	background-image: url(../img/textures/vertical-dashed-line-1px.png);
+	content: "";
+	z-index: 1;
+	background-repeat: repeat-y;
+}
+
+.verticalStitchRight:after {
+	right: 5em;
+}
+
+.verticalStitchLeft:after {
+	left: 5em;
+}
+
 /*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
@@ -4010,8 +4034,7 @@ footer .row .col:last-of-type {
 	background: linear-gradient(90deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
 }
 
-#ceo-message::after,
-.tape-bottom-left:after {
+#ceo-message::after {
 	position: absolute;
 	bottom: -50px;
 	left: 0;
@@ -4024,8 +4047,7 @@ footer .row .col:last-of-type {
 	z-index: 999;
 }
 
-.homePagePagesFeedContainer > .row:nth-child(2)::before, .thriving-communities .wp-block-image.videoOverlay::before,
-.tape-top-right:before {
+.homePagePagesFeedContainer > .row:nth-child(2)::before, .thriving-communities .wp-block-image.videoOverlay::before {
 	position: absolute;
 	top: -50px;
 	right: 0;
@@ -4038,8 +4060,7 @@ footer .row .col:last-of-type {
 	z-index: 2;
 }
 
-.topLeftCaption::before, .working-waterfronts .wp-block-image.videoOverlay::before,
-.tape-top-left:before {
+.topLeftCaption::before, .working-waterfronts .wp-block-image.videoOverlay::before {
 	position: absolute;
 	top: -50px;
 	left: 0;
@@ -4052,8 +4073,7 @@ footer .row .col:last-of-type {
 	z-index: 2;
 }
 
-.topLeftCaption::after, .working-waterfronts .wp-block-image.videoOverlay::after,
-.tape-bottom-right:after {
+.topLeftCaption::after, .working-waterfronts .wp-block-image.videoOverlay::after {
 	position: absolute;
 	bottom: -50px;
 	right: 0;
