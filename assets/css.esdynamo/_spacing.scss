@@ -156,3 +156,11 @@ section {
 .hidden {
 	opacity: .5;
 }
+
+// MAX WIDTH STYLES
+.innerContainer.max-width-1080 {
+	max-width: 1080px;
+}
+.innerContainer.max-width-800 {
+	max-width: 800px;
+}

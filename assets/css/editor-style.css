@@ -892,6 +892,14 @@ section {
 	opacity: .5;
 }
 
+.innerContainer.max-width-1080 {
+	max-width: 1080px;
+}
+
+.innerContainer.max-width-800 {
+	max-width: 800px;
+}
+
 .modal {
 	display: none;
 	position: fixed;
