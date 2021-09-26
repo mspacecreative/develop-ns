@@ -24,6 +24,7 @@ $hide = get_field('hide_block');
 $overlay = get_field('background_image_overlay');
 $maxwidth = get_field('max_width');
 $dasheddivider = get_field('dashed_divider');
+$bgsize = get_field('background_size');
 
 // CUSTOM ID
 $id = '' . $block['id'];
@@ -145,7 +146,7 @@ switch ( $gutterspacing ) {
 }
 
 if ( $bgimg ): ?>
-<section<?php if ( $id ): echo ' id="'; echo $id; echo '"'; endif; ?> class="section_has_bg_img<?php if ($dasheddivider): echo ' dashed-divider'; endif; if ( $className ): echo esc_attr($className); endif; if ($hide): echo ' hidden'; endif; ?>" style="background-image: url(<?php echo $bgimg ?>);<?php if ( $bgposition ): echo ' background-position: '; echo $bgposition; else: echo ' background-position: center'; endif; ?>; background-size: cover; background-repeat: no-repeat;<?php if ( $hide ): echo ' display: none;'; endif; ?>">
+<section<?php if ( $id ): echo ' id="'; echo $id; echo '"'; endif; ?> class="section_has_bg_img<?php if ($dasheddivider): echo ' dashed-divider'; endif; if ( $className ): echo esc_attr($className); endif; if ($hide): echo ' hidden'; endif; ?>" style="background-image: url(<?php echo $bgimg ?>);<?php if ( $bgposition ): echo ' background-position: '; echo $bgposition; else: echo ' background-position: center'; endif; ?>; <?php if ($bgsize == '100'): echo 'background-size: 100%;'; else: echo 'background-size: cover;'; endif; ?> background-repeat: no-repeat;<?php if ( $hide ): echo ' display: none;'; endif; ?>">
 	<?php if ( $tint ): ?>
 	<div class="<?php echo $tint ?>" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; endif; ?>"></div>
 	<?php endif; ?>
