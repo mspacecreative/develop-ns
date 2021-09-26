@@ -29,7 +29,7 @@ if ( function_exists( 'add_theme_support' ) ) {
     add_image_size( 'medium', 250, '', true ); // Medium Thumbnail.
     add_image_size( 'small', 120, '', true ); // Small Thumbnail.
     add_image_size( 'custom-size', 700, 200, true ); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
-    add_image_size( 'anamorphic', 1600, 567, true ); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    //add_image_size( 'anamorphic', 1600, 567, true ); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
     // Enables post and comment RSS feed links to head.
     add_theme_support( 'automatic-feed-links' );
@@ -360,6 +360,22 @@ function html5_shortcode_demo( $atts, $content = null ) {
 function html5_shortcode_demo_2( $atts, $content = null ) {
     return '<h2>' . $content . '</h2>';
 }
+
+// CUSTOM IMAGE SIZE ATTACHED TO IMAGE DROP DOWN
+function setup_new_image_size() {
+    if ( function_exists( 'add_image_size' ) ) {
+        add_image_size( 'anamorphic', 1600, 567, true );
+    }
+}
+add_action( 'after_setup_theme', 'setup_new_image_size' );
+
+function add_image_size_to_media($sizes){
+    $custom_sizes = array(
+    'anamorphic' => 'Anamorphic'
+    );
+    return array_merge( $sizes, $custom_sizes );
+}
+add_filter('image_size_names_choose', 'add_image_size_to_media');
 
 // INCLUDES
 include 'functions/styles-scripts.php';
