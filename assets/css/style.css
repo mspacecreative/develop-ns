@@ -4025,7 +4025,7 @@ footer .row .col:last-of-type {
 }
 
 .homePagePagesFeedContainer > .row:nth-child(2)::before, .thriving-communities .wp-block-image.videoOverlay::before,
-tape-top-right:before {
+.tape-top-right:before {
 	position: absolute;
 	top: -50px;
 	right: 0;
