@@ -6,6 +6,7 @@ while ( have_rows('flexible_content') ): the_row();
 	$flexgallery = get_sub_field('flex_gallery');
 	$animate = get_sub_field('animate');
 	$maxwidth = get_sub_field('max_width');
+	$caption = $fleximage['caption'];
 					
 		if ( $flexgallery ): ?>
 		<ul class="flex-gallery"<?php if ($maxwidth): echo ' style="max-width: '; echo $maxwidth; echo ';"'; endif; ?>>
@@ -13,6 +14,9 @@ while ( have_rows('flexible_content') ): the_row();
 			<?php foreach ( $flexgallery as $fleximage ): ?>
 			<li<?php if ($animate): echo ' data-aos="fade-right"'; endif; ?>>
 				<img src="<?php echo $fleximage['sizes']['large']; ?>" alt="<?php echo $fleximage['alt']; ?>" />
+				<?php if ($caption): ?>
+				<p class="img-caption"><?php echo $caption ?></p>
+				<?php endif; ?>
 			</li>
 			<?php endforeach; ?>
 							

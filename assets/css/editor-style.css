@@ -1635,6 +1635,10 @@ figcaption {
 	fill: #012a3c;
 }
 
+.img-caption {
+	font-size: 13px;
+}
+
 .container, .container-fluid {
 	margin-right: auto;
 	margin-left: auto;
@@ -4939,6 +4943,12 @@ blockquote::before {
 
 .editor-styles-wrapper .flex-gallery li {
 	margin: 4em 0;
+}
+
+@media (min-width: 1440px) {
+	.interface-interface-skeleton__sidebar .interface-complementary-area {
+		width: 600px !important;
+	}
 }
 
 @media (min-width: 782px) {

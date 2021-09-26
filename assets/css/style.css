@@ -2841,6 +2841,10 @@ figcaption {
 	fill: #012a3c;
 }
 
+.img-caption {
+	font-size: 13px;
+}
+
 .container, .container-fluid {
 	margin-right: auto;
 	margin-left: auto;
