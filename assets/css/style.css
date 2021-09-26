@@ -4010,7 +4010,8 @@ footer .row .col:last-of-type {
 	background: linear-gradient(90deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
 }
 
-#ceo-message::after {
+#ceo-message::after,
+.tape-bottom-left:after {
 	position: absolute;
 	bottom: -50px;
 	left: 0;
@@ -4023,7 +4024,8 @@ footer .row .col:last-of-type {
 	z-index: 999;
 }
 
-.homePagePagesFeedContainer > .row:nth-child(2)::before, .thriving-communities .wp-block-image.videoOverlay::before {
+.homePagePagesFeedContainer > .row:nth-child(2)::before, .thriving-communities .wp-block-image.videoOverlay::before,
+tape-top-right:before {
 	position: absolute;
 	top: -50px;
 	right: 0;
@@ -4036,7 +4038,8 @@ footer .row .col:last-of-type {
 	z-index: 2;
 }
 
-.topLeftCaption::before, .working-waterfronts .wp-block-image.videoOverlay::before {
+.topLeftCaption::before, .working-waterfronts .wp-block-image.videoOverlay::before,
+.tape-top-left:before {
 	position: absolute;
 	top: -50px;
 	left: 0;
@@ -4049,7 +4052,8 @@ footer .row .col:last-of-type {
 	z-index: 2;
 }
 
-.topLeftCaption::after, .working-waterfronts .wp-block-image.videoOverlay::after {
+.topLeftCaption::after, .working-waterfronts .wp-block-image.videoOverlay::after,
+.tape-bottom-right:after {
 	position: absolute;
 	bottom: -50px;
 	right: 0;
