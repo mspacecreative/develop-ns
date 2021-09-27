@@ -3890,10 +3890,11 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	.homePagePagesFeed:nth-last-of-type(even) .col-inner {
 		align-items: flex-start;
 	}
-	
-	.bottomMarginMobile {
-		margin-bottom: 30px;
-	}
+	  /*
+		.bottomMarginMobile {
+			margin-bottom: 30px;
+		}
+		*/
 	
 	.absolutePositionedImg img {
 		position: relative;
