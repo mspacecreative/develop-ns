@@ -3655,7 +3655,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	margin-left: 0 !important;
 }
 
-.column-margins {
+.message-from-ceo .column-margins {
 	padding: 5em;
 }
 
@@ -4021,7 +4021,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		left: 2em;
 	}
 	
-	.column-margins, .checker-board-content {
+	.message-from-ceo .column-margins, .checker-board-content {
 		padding: 4em 2em;
 	}
 	
