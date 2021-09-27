@@ -2848,6 +2848,10 @@ figcaption {
 	margin: 1em 0 0;
 }
 
+.home .flex-gallery {
+	margin-top: 0;
+}
+
 .flex-gallery li {
 	margin: 0 0 4em;
 }
