@@ -2892,7 +2892,8 @@ figcaption {
 	background-color: #999;
 	text-align: center;
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
+	justify-content: center;
 }
 
 .container, .container-fluid {
