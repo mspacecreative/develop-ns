@@ -1592,11 +1592,9 @@ figure.wp-block-image {
 	position: relative;
 }
 
-.absolutePositionedImg img {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	width: calc(100% + 2px);
+.pageHeaderBgGrid .absoluteImgContainer {
+	display: flex;
+	align-items: flex-end;
 }
 
 .pageHeaderBgGrid {

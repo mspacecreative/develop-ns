@@ -147,10 +147,15 @@ figure.wp-block-image {
 }
 
 .absolutePositionedImg img {
-	position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-	width: calc(100% + 2px);
+	//position: absolute;
+    //left: 50%;
+    //transform: translateX(-50%);
+	//width: calc(100% + 2px);
+}
+
+.pageHeaderBgGrid .absoluteImgContainer {
+	display: flex;
+	align-items: flex-end;
 }
 
 .pageHeaderBgGrid {
