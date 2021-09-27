@@ -1621,6 +1621,7 @@ figure.wp-block-image {
 figure {
 	margin-top: 25px;
 	margin-bottom: 25px;
+	width: 100%;
 }
 
 figcaption {
