@@ -92,3 +92,16 @@
 .half_half_section:nth-of-type(even) > .checker-board-img .col-inner {
 	margin-right: auto;
 }
+
+// SLICK SLIDER
+.slick-slider, .slick-list, .slick-track {
+	height: 100%;
+}
+.slick-slide img {
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+}

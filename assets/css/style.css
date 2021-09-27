@@ -4969,6 +4969,19 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	margin-right: auto;
 }
 
+.slick-slider, .slick-list, .slick-track {
+	height: 100%;
+}
+
+.slick-slide img {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+}
+
 @media (max-width: 850px) {
 	.tagline {
 		padding: 35px 0;
