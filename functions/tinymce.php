@@ -24,6 +24,12 @@ function my_custom_styles( $init_array ) {
             'wrapper' => true,
         ),
         array(  
+            'title' => 'Inline blue link with arrow',  
+            'block' => 'div',  
+            'classes' => 'inline-link-with-arrow',
+            'wrapper' => true,
+        ),
+        array(  
             'title' => 'CTA Button',  
             'block' => 'a',  
             'classes' => 'button',

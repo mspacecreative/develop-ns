@@ -83,4 +83,9 @@
 // REMOVE OUTLINE WHEN USING MOUSE
 body.using-mouse :focus {
 	outline: none!important;
-} 
+}
+
+// INLINE BLUE LINK WITH ARROW
+.inline-link-with-arrow {
+	padding-right: 20px;
+}

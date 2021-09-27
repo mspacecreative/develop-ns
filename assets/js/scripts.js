@@ -114,6 +114,11 @@
 			// ADD GHOST CONTAINER
 			$('.verticalStitchRight, .verticalStitchLeft').prepend('<div class="ghostVertStitchContainer"></div>');
 			
+			// ADD RIGHT FACING ARROW IN INLINE LINKS
+			$('.inline-link-with-arrow').each(function() {
+				$(this).append('<span class="downArrowContainer"><span class="downArrow">&nbsp;</span></span>');
+			});
+			
 			// SLICK CAROUSEL
 		
 			var $slider = $(".carousel").slick({

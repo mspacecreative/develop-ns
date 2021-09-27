@@ -1930,6 +1930,10 @@ body.using-mouse :focus {
 	outline: none !important;
 }
 
+.inline-link-with-arrow {
+	padding-right: 20px;
+}
+
 .top-bottom-padding {
 	padding: 4em 0;
 }
