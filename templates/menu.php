@@ -4,7 +4,7 @@
 		<!-- TITLE AND CONTACT INFO -->
 		<div class="row between-lg between-md horizontalStitchBottom bottom-padding">
 			<div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				<h1>Develop Nova Scotia<br /> Annual Report<br /> 2019/2020</h1>
+				<h1><?php echo bloginfo('name'); ?><br /> Annual Report<br /> 2020/2021</h1>
 			</div>
 			<div class="col col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<h3 style="margin-bottom: 5px;">Share the Report</h3>
