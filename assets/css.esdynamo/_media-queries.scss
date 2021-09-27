@@ -118,7 +118,7 @@
 }
 
 @media (max-width: 767px) {
-	.hide-on-mobile {
+	.menuContents .nav li.hide-on-mobile {
 		display: none;
 	}
 }
@@ -130,7 +130,11 @@
 	.contact {
 		display: block;
 	}
-	.hide-on-desktop {
+	.menu-item-1446 {
+		break-after: column;
+		break-inside: avoid;
+	}
+	.menuContents .nav li.hide-on-desktop {
 		display: none;
 	}
 }

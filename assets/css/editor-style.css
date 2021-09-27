@@ -3345,11 +3345,13 @@ html.menOpen, body.menuOpen {
 	font-size: 19px;
 }
 
+/*
 .menu-item-384 {
 	break-after: column;
 	break-inside: avoid;
 	break-after: always;
 }
+*/
 
 .at-label {
 	display: none;
@@ -3933,7 +3935,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 }
 
 @media (max-width: 767px) {
-	.hide-on-mobile {
+	.menuContents .nav li.hide-on-mobile {
 		display: none;
 	}
 }
@@ -3947,7 +3949,12 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		display: block;
 	}
 	
-	.hide-on-desktop {
+	.menu-item-1446 {
+		break-after: column;
+		break-inside: avoid;
+	}
+	
+	.menuContents .nav li.hide-on-desktop {
 		display: none;
 	}
 }
