@@ -726,7 +726,13 @@ body.using-mouse :focus {
 
 .inline-link-with-arrow {
 	position: relative;
-	padding-right: 20px;
+	padding-right: 25px;
+	display: inline-block;
+}
+
+.inline-link-with-arrow .downArrowContainer {
+	transform: rotate(-90deg);
+	top: 4px;
 }
 
 .top-bottom-padding {
