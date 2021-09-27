@@ -4021,8 +4021,13 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		left: 2em;
 	}
 	
+	.column-margins {
+		padding: 4em 2em;
+	}
+	
 	.heroContentBox {
-		padding-left: 4em;
+		padding: 2em 2em 2em 4em;
+		max-width: 100%;
 	}
 	
 	.ghostVertStitchContainer {
@@ -4042,11 +4047,6 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	
 	.col-inner {
 		padding: 4em 2em;
-	}
-	
-	.heroContentBox {
-		padding: 2em 2em 2em 6em;
-		max-width: 100%;
 	}
 	
 	.heroContentBox h1 {
@@ -4305,11 +4305,6 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		padding: 4em 2em;
 	}
 	
-	.heroContentBox {
-		padding: 2em 2em 2em 6em;
-		max-width: 100%;
-	}
-	
 	.heroContentBox h1 {
 		font-size: 25px;
 	}
@@ -4560,7 +4555,8 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	}
 	
 	.heroContentBox {
-		padding-left: 4em;
+		padding: 2em 2em 2em 4em;
+		max-width: 100%;
 	}
 	
 	.toggle {
