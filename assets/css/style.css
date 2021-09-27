@@ -2746,7 +2746,7 @@ figure.wp-block-image {
 	margin: 0;
 }
 
-.wp-block-image .size-full, .wp-block-image .size-full img {
+.wp-block-image .size-full, .wp-block-image .size-full img, .wp-block-image img {
 	width: 100%;
 }
 
@@ -2803,6 +2803,11 @@ figure.wp-block-image {
 	left: 50%;
 	transform: translateX(-50%);
 	width: calc(100% + 2px);
+}
+
+.pageHeaderBgGrid .absolutePositionedImg img {
+	height: auto;
+	bottom: -50px;
 }
 
 .pageHeaderBgGrid {
