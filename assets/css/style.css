@@ -2834,7 +2834,7 @@ figcaption {
 }
 
 .flex-gallery li {
-	margin: 4em 0;
+	margin: 0 0 4em;
 }
 
 .flex-gallery li:last-of-type {
