@@ -725,6 +725,7 @@ body.using-mouse :focus {
 }
 
 .inline-link-with-arrow {
+	position: relative;
 	padding-right: 20px;
 }
 
