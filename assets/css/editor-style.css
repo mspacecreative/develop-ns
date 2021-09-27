@@ -1599,11 +1599,6 @@ figure.wp-block-image {
 	width: calc(100% + 2px);
 }
 
-.pageHeaderBgGrid .absolutePositionedImg img {
-	height: auto;
-	bottom: -50px;
-}
-
 .pageHeaderBgGrid {
 	overflow: hidden;
 }
