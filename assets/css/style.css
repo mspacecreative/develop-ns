@@ -1930,7 +1930,7 @@ body.using-mouse :focus {
 	outline: none !important;
 }
 
-.inline-link-with-arrow {
+.inline-link-with-arrow a {
 	position: relative;
 	padding-right: 25px;
 	display: inline-block;
@@ -1939,6 +1939,10 @@ body.using-mouse :focus {
 .inline-link-with-arrow .downArrowContainer {
 	transform: rotate(-90deg);
 	top: 4px;
+}
+
+.inline-link-with-arrow .downArrow, .inline-link-with-arrow .downArrow:after, .inline-link-with-arrow .downArrow:before {
+	background-color: #008fb7;
 }
 
 .top-bottom-padding {

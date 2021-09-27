@@ -115,7 +115,7 @@
 			$('.verticalStitchRight, .verticalStitchLeft').prepend('<div class="ghostVertStitchContainer"></div>');
 			
 			// ADD RIGHT FACING ARROW IN INLINE LINKS
-			$('.inline-link-with-arrow').each(function() {
+			$('.inline-link-with-arrow a').each(function() {
 				$(this).prepend('<span class="downArrowContainer"><span class="downArrow">&nbsp;</span></span>');
 			});
 			
