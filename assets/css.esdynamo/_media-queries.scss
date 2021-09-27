@@ -117,12 +117,21 @@
 	}
 }
 
+@media (max-width: 767px) {
+	.hide-on-mobile {
+		display: none;
+	}
+}
+
 @media (min-width: 768px) {
 	.toggle {
 		display: none;
 	}
 	.contact {
 		display: block;
+	}
+	.hide-on-desktop {
+		display: none;
 	}
 }
 

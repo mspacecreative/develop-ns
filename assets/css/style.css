@@ -5138,6 +5138,12 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	}
 }
 
+@media (max-width: 767px) {
+	.hide-on-mobile {
+		display: none;
+	}
+}
+
 @media (min-width: 768px) {
 	.toggle {
 		display: none;
@@ -5145,6 +5151,10 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	
 	.contact {
 		display: block;
+	}
+	
+	.hide-on-desktop {
+		display: none;
 	}
 }
 
