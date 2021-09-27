@@ -5227,7 +5227,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		left: 2em;
 	}
 	
-	.column-margins {
+	body .column-margins, .checker-board-content {
 		padding: 4em 2em;
 	}
 	
