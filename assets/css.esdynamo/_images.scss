@@ -113,6 +113,9 @@ figure.wp-block-image {
 }
 
 // OBJECT FIT IMAGES
+.absoluteImgContainer {
+	position: relative;
+}
 .absolute_img, .absoluteImgContainer img {
 	max-width: none;
 	width: 100%;

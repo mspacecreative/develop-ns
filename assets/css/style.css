@@ -2765,6 +2765,10 @@ figure.wp-block-image {
 	pointer-events: none;
 }
 
+.absoluteImgContainer {
+	position: relative;
+}
+
 .absolute_img, .absoluteImgContainer img {
 	max-width: none;
 	width: 100%;
