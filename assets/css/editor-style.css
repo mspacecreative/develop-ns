@@ -1639,6 +1639,10 @@ figcaption {
 	display: none;
 }
 
+.video-section img {
+	width: 100%;
+}
+
 .ne-arrow-fill {
 	fill: #012a3c;
 }
