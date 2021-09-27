@@ -113,9 +113,6 @@ figure.wp-block-image {
 }
 
 // OBJECT FIT IMAGES
-.absoluteImgContainer {
-	position: relative;
-}
 .absolute_img, .absoluteImgContainer img {
 	max-width: none;
 	width: 100%;
@@ -154,11 +151,6 @@ figure.wp-block-image {
     left: 50%;
     transform: translateX(-50%);
 	width: calc(100% + 2px);
-}
-
-.pageHeaderBgGrid .absolutePositionedImg img {
-	height: auto;
-	bottom: -50px;
 }
 
 .pageHeaderBgGrid {
