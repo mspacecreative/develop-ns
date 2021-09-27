@@ -5787,7 +5787,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		max-width: 100%;
 	}
 	
-	.half_half_section:nth-of-type(1) .checker-board-img:before, .half_half_section:nth-of-type(1) .home-featured-img:before {
+	.half_half_section:nth-of-type(1) .checker-board-img:before, .half_half_section:nth-of-type(1) .home-featured-img:before, .half_half_section:nth-of-type(3) .checker-board-img:before, .half_half_section:nth-of-type(3) .home-featured-img:before {
 		left: 2em;
 	}
 	
@@ -5818,6 +5818,10 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 @media (max-width: 880px) and (orientation: landscape) {
 	.tagline h1 {
 		font-size: 45px;
+	}
+	
+	.homePagePagesFeed:nth-last-of-type(even) .col-inner, .homePagePagesFeed:nth-last-of-type(even) .col-inner .imgContainer, .homePagePagesFeed:nth-last-of-type(even) .col-inner .imgContainer img {
+		margin-left: auto;
 	}
 	
 	.infoGraphicContainer {
