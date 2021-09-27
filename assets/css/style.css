@@ -2877,6 +2877,24 @@ figcaption {
 	font-size: 13px;
 }
 
+.video-placeholder-container {
+	height: auto;
+	padding-bottom: 42.5%;
+	position: relative;
+}
+
+.video-placeholder {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #999;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
 .container, .container-fluid {
 	margin-right: auto;
 	margin-left: auto;

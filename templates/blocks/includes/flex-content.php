@@ -62,7 +62,15 @@ while ( have_rows('flexible_content') ): the_row();
 						 	
 			<div class="photoZoom videoOverlay">
 				<a data-id="<?php echo $video->ID ?>" class="open-modal" title="<?php echo $title ?>" href="<?php echo the_permalink($video->ID); ?>">
+					<?php if ($thumb): ?>
 					<img src="<?php echo $thumb ?>">
+					<?php else: ?>
+					<div class="video-placeholder-container">
+						<div class="video-placeholder">
+							<h3><?php echo $title ?></h3>
+						</div>
+					</div>
+					<?php endif; ?>
 				</a>
 			</div>
 		<?php 
