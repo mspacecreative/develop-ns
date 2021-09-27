@@ -67,7 +67,7 @@ while ( have_rows('flexible_content') ): the_row();
 					<?php else: ?>
 					<div class="video-placeholder-container">
 						<div class="video-placeholder">
-							<h3 style="color: #fff;"><?php echo $title ?></h3>
+							<h3 style="color: #fff; padding: 0 1em;"><?php echo $title ?></h3>
 						</div>
 					</div>
 					<?php endif; ?>

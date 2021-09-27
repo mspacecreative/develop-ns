@@ -2851,6 +2851,7 @@ figcaption {
 
 .home .flex-gallery {
 	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .flex-gallery li {
@@ -6141,7 +6142,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	}
 	
 	.homePagePagesFeed:nth-last-of-type(even) .col-inner, .homePagePagesFeed:nth-last-of-type(even) .col-inner .imgContainer, .homePagePagesFeed:nth-last-of-type(even) .col-inner .imgContainer img {
-		margin-left: 0;
+		margin-left: auto;
 	}
 	
 	.homePagePagesFeed:nth-last-of-type(even) > .col {
