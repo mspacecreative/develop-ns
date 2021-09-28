@@ -2866,6 +2866,14 @@ figcaption {
 	display: none;
 }
 
+.img-align-center {
+	margin: auto;
+}
+
+.img-align-right {
+	margin-left: auto;
+}
+
 .video-section img {
 	width: 100%;
 }
@@ -4949,19 +4957,19 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 }
 
 .half_half_section:nth-of-type(2) .checker-board-img:before {
-	right: calc(100% - 5em);
+	right: calc(100% - 10em);
 }
 
 .half_half_section:nth-of-type(3) .checker-board-img:before {
-	left: calc(100% - 5em);
+	left: calc(100% - 10em);
 }
 
 .half_half_section:nth-of-type(2) .home-featured-img:before {
-	right: calc(50% - 5em);
+	right: calc(50% - 10em);
 }
 
 .half_half_section:nth-of-type(3) .home-featured-img:before {
-	left: calc(50% - 5em);
+	left: calc(50% - 10em);
 }
 
 .message-from-ceo .col:last-of-type .column-margins {
@@ -4973,7 +4981,8 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 }
 
 .half_half_section .imgContainer {
-	max-width: 200px;
+	max-width: 300px;
+	max-height: 300px;
 	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;

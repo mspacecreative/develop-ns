@@ -6,9 +6,10 @@ while ( have_rows('flexible_content') ): the_row();
 	$flexgallery = get_sub_field('flex_gallery');
 	$animate = get_sub_field('animate');
 	$maxwidth = get_sub_field('max_width');
+	$imgalignment = get_sub_field('image_alignment');
 					
 		if ( $flexgallery ): ?>
-		<ul class="flex-gallery"<?php if ($maxwidth): echo ' style="max-width: '; echo $maxwidth; echo ';"'; endif; ?>>
+		<ul class="flex-gallery<?php if ($imgalignment == 'center'): echo ' img-align-center'; elseif ($imgalignment == 'right'): echo ' img-align-right'; endif; ?>"<?php if ($maxwidth): echo ' style="max-width: '; echo $maxwidth; echo ';"'; endif; ?>>
 							
 			<?php foreach ( $flexgallery as $fleximage ):
 			$caption = $fleximage['caption']; ?>
