@@ -1829,15 +1829,11 @@ body .fa, body .far, body .fas {
 }
 
 .hero-caption {
-	position: absolute;
-	bottom: 2em;
-	right: 3em;
-	padding: 1em 1.25em;
-	background-color: rgba(0, 0, 0, 0.5);
-	color: #fff;
+	padding: 1em 0;
+	color: #000;
 	line-height: 1.25em;
 	font-size: 13px;
-	border-radius: 3px;
+	text-align: right;
 }
 
 .button {
