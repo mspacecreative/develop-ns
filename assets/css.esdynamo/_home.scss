@@ -73,7 +73,8 @@
 	height: 100%;
     display: flex;
 }
-.home-featured-img {
+.home-featured-img,
+.videoOverlay a {
 	position: relative;
     max-height: 500px;
     overflow: hidden;
