@@ -3807,12 +3807,17 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	display: flex;
 }
 
-.home-featured-img, .videoOverlay a, .wp-block-image figure, .wp-block-image .aligncenter, .wp-block-image.size-anamorphic {
+.home-featured-img, .videoOverlay a, .wp-block-image figure, .wp-block-image .aligncenter {
 	position: relative;
 	max-height: 500px;
 	overflow: hidden;
 	display: flex;
 	align-items: center;
+}
+
+.wp-block-image.size-anamorphic img {
+	max-height: 500px;
+	object-fit: cover;
 }
 
 .home-featured-img img {
