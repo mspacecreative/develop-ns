@@ -4341,13 +4341,6 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		top: 104px;
 	}
 	
-	.videoOverlay a::after {
-		width: 75px;
-		height: 75px;
-		margin-left: -37.5px;
-		margin-top: -37.5px;
-	}
-	
 	#ceo-message {
 		background-size: 200%;
 	}
@@ -4600,10 +4593,10 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	}
 	
 	.videoOverlay a::after {
-		width: 42px;
-		height: 42px;
-		margin-left: -21px;
-		margin-top: -21px;
+		width: 75px;
+		height: 75px;
+		margin-left: -37.5px;
+		margin-top: -37.5px;
 	}
 	
 	#ceo-message, #internet-for-ns-initiative, #peggys-cove, #internet-for-ns-initiative, #peggys-cove {
