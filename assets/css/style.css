@@ -5562,6 +5562,11 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		border-radius: 3px 3px 0 0;
 	}
 	
+	.half_half_section .imgContainer {
+		max-height: 200px;
+		max-width: 200px;
+	}
+	
 	body .hero .innerContainer::before {
 		left: 2em;
 	}
@@ -5851,8 +5856,14 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		font-size: 45px;
 	}
 	
+	.half_half_section .imgContainer {
+		max-height: 200px;
+		max-width: 200px;
+	}
+	
 	.homePagePagesFeed:nth-last-of-type(even) .col-inner, .homePagePagesFeed:nth-last-of-type(even) .col-inner .imgContainer, .homePagePagesFeed:nth-last-of-type(even) .col-inner .imgContainer img {
 		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	.infoGraphicContainer {
