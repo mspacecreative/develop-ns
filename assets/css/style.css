@@ -5060,6 +5060,25 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	object-fit: cover;
 }
 
+.home #message-from-ceo .button:hover {
+	color: #008fb7 !important;
+}
+
+.button.blue_bg:hover {
+	color: #008fb7;
+	border-color: #008fb7;
+}
+
+.button.orange_bg:hover {
+	color: #f36f00;
+	border-color: #f36f00;
+}
+
+.button.navy_bg:hover {
+	color: #012a3c;
+	border-color: #012a3c;
+}
+
 @media (max-width: 850px) {
 	.tagline {
 		padding: 35px 0;

@@ -114,3 +114,19 @@
     left: 0;
     object-fit: cover;
 }
+
+.home #message-from-ceo .button:hover {
+	color: $brandBlue!important;
+}
+.button.blue_bg:hover {
+	color: $brandBlue;
+	border-color: $brandBlue;
+}
+.button.orange_bg:hover {
+	color: $brandOrange;
+	border-color: $brandOrange;
+}
+.button.navy_bg:hover {
+	color: $brandNavy;
+	border-color: $brandNavy;
+}
