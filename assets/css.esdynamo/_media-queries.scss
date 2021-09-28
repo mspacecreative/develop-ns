@@ -419,10 +419,6 @@
 		bottom: 0;
 		border-radius: 3px 3px 0 0;
 	}
-	.half_half_section .imgContainer {
-		max-height: 200px;
-		max-width: 200px;
-	}
 	body .hero .innerContainer::before {
 		left: 2em;
 	}
@@ -656,10 +652,6 @@
 @media (max-width: 880px) and (orientation: landscape) {
 	.tagline h1 {
 		font-size: 45px;
-	}
-	.half_half_section .imgContainer {
-		max-height: 200px;
-		max-width: 200px;
 	}
 	.homePagePagesFeed:nth-last-of-type(even) .col-inner, .homePagePagesFeed:nth-last-of-type(even) .col-inner .imgContainer, .homePagePagesFeed:nth-last-of-type(odd) .col-inner .imgContainer, .homePagePagesFeed:nth-last-of-type(even) .col-inner .imgContainer img, .homePagePagesFeed .col-inner .imgContainer {
 	    margin-left: auto;
