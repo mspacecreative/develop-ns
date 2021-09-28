@@ -191,6 +191,9 @@ figcaption {
 .flex-gallery li:last-of-type {
 	margin-bottom: 0;
 }
+.flex-gallery img {
+	width: 100%;
+}
 .flex-gallery li::before {
 	display: none;
 }

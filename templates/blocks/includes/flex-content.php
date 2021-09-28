@@ -7,6 +7,21 @@ while ( have_rows('flexible_content') ): the_row();
 	$animate = get_sub_field('animate');
 	$maxwidth = get_sub_field('max_width');
 	$imgalignment = get_sub_field('image_alignment');
+	$captionalignment = get_sub_field('caption_alignment');
+	
+	switch ($captionalignment) {
+		case 'left':
+			$captionalignment = '';
+			break;
+		case 'center':
+			$captionalignment = ' text-align-center';
+			break;
+		case 'right':
+			$captionalignment = ' text-align-right';
+			break;
+		default:
+			$captionalignment = '';
+	}
 					
 		if ( $flexgallery ): ?>
 		<ul class="flex-gallery<?php if ($imgalignment == 'center'): echo ' img-align-center'; elseif ($imgalignment == 'right'): echo ' img-align-right'; endif; ?>"<?php if ($maxwidth): echo ' style="max-width: '; echo $maxwidth; echo ';"'; endif; ?>>
@@ -16,7 +31,7 @@ while ( have_rows('flexible_content') ): the_row();
 			<li<?php if ($animate): echo ' data-aos="fade-right"'; endif; ?>>
 				<img src="<?php echo $fleximage['sizes']['large']; ?>" alt="<?php echo $fleximage['alt']; ?>" />
 				<?php if ($caption): ?>
-				<p class="img-caption"><?php echo $caption ?></p>
+				<p class="img-caption<?php if ($captionalignment): echo $captionalignment; endif; ?>"><?php echo $caption ?></p>
 				<?php endif; ?>
 			</li>
 			<?php endforeach; ?>

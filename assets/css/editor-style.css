@@ -1667,6 +1667,10 @@ figcaption {
 	margin-bottom: 0;
 }
 
+.flex-gallery img {
+	width: 100%;
+}
+
 .flex-gallery li::before {
 	display: none;
 }
@@ -3910,11 +3914,10 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	.homePagePagesFeed:nth-last-of-type(even) .col-inner {
 		align-items: flex-start;
 	}
-	  /*
-		.bottomMarginMobile {
-			margin-bottom: 30px;
-		}
-		*/
+	
+	.bottomMarginMobile {
+		margin-bottom: 1em;
+	}
 	
 	.absolutePositionedImg img {
 		position: relative;
