@@ -2623,6 +2623,7 @@ blockquote p {
 }
 
 .article-links a {
+	padding-right: 30px;
 	display: inline-block;
 }
 
