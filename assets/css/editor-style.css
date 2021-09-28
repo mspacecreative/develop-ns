@@ -3807,6 +3807,14 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	display: flex;
 }
 
+.home-featured-image {
+	position: relative;
+	max-height: 500px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+
 .home-featured-img img {
 	width: 100%;
 }
