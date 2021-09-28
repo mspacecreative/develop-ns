@@ -75,7 +75,7 @@
 }
 .home-featured-img,
 .videoOverlay a,
-.wp-block-image {
+.wp-block-image > figure {
 	position: relative;
     max-height: 500px;
     overflow: hidden;
