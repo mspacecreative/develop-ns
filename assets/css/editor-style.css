@@ -4395,10 +4395,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	}
 	
 	.hero-caption {
-		left: 3em;
-		right: 3em;
-		bottom: 0;
-		border-radius: 3px 3px 0 0;
+		text-align: left;
 	}
 	
 	body .hero .innerContainer::before {
