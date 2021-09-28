@@ -4242,19 +4242,19 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		padding-left: 0 !important;
 	}
 	
-	#ceo-message::after, .topLeftCaption::after, .working-waterfronts .wp-block-image.videoOverlay::after {
+	#ceo-message::after, .topLeftCaption::after, .working-waterfronts .wp-block-image.videoOverlay::after, .tape-bottom-left:before {
 		width: 125px;
 		height: 50px;
 		bottom: -25px;
 	}
 	
-	.homePagePagesFeedContainer > .row:nth-child(2)::before, .thriving-communities .wp-block-image.videoOverlay::before {
+	.homePagePagesFeedContainer > .row:nth-child(2)::before, .thriving-communities .wp-block-image.videoOverlay::before, .tape-top-right:before {
 		width: 75px;
 		height: 59px;
 		top: -25px;
 	}
 	
-	.topLeftCaption::before, .working-waterfronts .wp-block-image.videoOverlay::before {
+	.topLeftCaption::before, .working-waterfronts .wp-block-image.videoOverlay::before, .tape-top-left:before {
 		width: 50px;
 		height: 51px;
 		top: -25px;
