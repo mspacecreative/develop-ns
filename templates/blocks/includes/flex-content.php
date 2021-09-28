@@ -84,6 +84,8 @@ while ( have_rows('flexible_content') ): the_row();
 						
 	<?php elseif ( get_row_layout() == 'post_content' ):
 	$video = get_sub_field('video');
+	$animate = get_sub_field('animate');
+	$animatedirection = get_sub_field('animation_direction');
 	//$issuu = get_sub_field('issuu');
 					
 		if ($video):
@@ -92,7 +94,7 @@ while ( have_rows('flexible_content') ): the_row();
 			$thumb = get_the_post_thumbnail_url( $video->ID, 'large');
 			$title = get_the_title($video->ID); ?>
 						 	
-			<div class="photoZoom videoOverlay">
+			<div<?php if ($animate): echo ' data-aos="fade-'; if ($animatedirection): echo $animatedirection; endif; echo'"'; endif; ?> class="photoZoom videoOverlay">
 				<a data-id="<?php echo $video->ID ?>" class="open-modal" title="<?php echo $title ?>" href="<?php echo the_permalink($video->ID); ?>">
 					<?php if ($thumb): ?>
 					<img src="<?php echo $thumb ?>">
