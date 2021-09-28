@@ -118,17 +118,17 @@ blockquote p {
 	margin-bottom: 0;
 }
 .article-links a {
-	position: relative;
-	padding-right: 30px;
+	//position: relative;
+	//padding-right: 30px;
 	display: inline-block;
 }
 .article-links .downArrowContainer {
 	transform: rotate(-135deg);
-	position: absolute;
-	right: 0;
-	top: 1px;
-	width: 20px;
-	height: 20px;
+    position: absolute;
+    top: calc(100% - 22px);
+    width: 20px;
+    height: 20px;
+    left: calc(100% + 10px);
 }
 .article-links .downArrow {
 	width: 3px;

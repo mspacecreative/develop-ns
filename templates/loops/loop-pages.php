@@ -60,10 +60,14 @@ switch ($themecolour) {
 				echo 
 				'<li>
 					<a href="' . $link . '">
-						<h3>' . $label . '</h3>
-						<span class="downArrowContainer">
-							<span class="downArrow">&nbsp;</span>
-						</span>
+						<h3>
+							<span style="position: relative;">' 
+								. $label . 
+								'<span class="downArrowContainer">
+									<span class="downArrow">&nbsp;</span>
+								</span>
+							</span>
+						</h3>
 					</a>
 				</li>';
 			}
