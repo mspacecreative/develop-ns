@@ -1828,6 +1828,18 @@ body .fa, body .far, body .fas {
 	height: 100%;
 }
 
+.hero-caption {
+	position: absolute;
+	bottom: 2em;
+	right: 3em;
+	padding: 1em 1.25em;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	line-height: 1.25em;
+	font-size: 13px;
+	border-radius: 3px;
+}
+
 .button {
 	text-transform: uppercase;
 	color: #fff;
@@ -5538,6 +5550,13 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 		padding: 50px 0;
 		display: flex;
 		align-items: center;
+	}
+	
+	.hero-caption {
+		left: 3em;
+		right: 3em;
+		bottom: 0;
+		border-radius: 3px 3px 0 0;
 	}
 	
 	body .hero .innerContainer::before {

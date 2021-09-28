@@ -10,6 +10,8 @@
 				?>
 			</h1>
 		</div>
+		
+		<p class="hero-caption"><?php echo __('Lunenburg Doc Fest 2021, photo credit Nancy MacDonald'); ?></p>
 	</div>
 	
 	<!-- HERO CAROUSEL -->
