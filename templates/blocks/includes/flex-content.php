@@ -5,6 +5,7 @@ while ( have_rows('flexible_content') ): the_row();
 	if ( get_row_layout() == 'image_list' ):
 	$flexgallery = get_sub_field('flex_gallery');
 	$animate = get_sub_field('animate');
+	$animatedirection = get_sub_field('animation_direction');
 	$maxwidth = get_sub_field('max_width');
 	$imgalignment = get_sub_field('image_alignment');
 	$captionalignment = get_sub_field('caption_alignment');
@@ -23,13 +24,27 @@ while ( have_rows('flexible_content') ): the_row();
 		default:
 			$captionalignment = '';
 	}
+	
+	switch ($animatedirection) {
+		case 'up':
+			$animatedirection = 'up';
+			break;
+		case 'left':
+			$animatedirection = 'left';
+			break;
+		case 'right':
+			$animatedirection = 'right';
+			break;
+		default:
+			$animatedirection = 'up';
+	}
 					
 		if ( $flexgallery ): ?>
 		<ul class="flex-gallery<?php if ($imgalignment == 'center'): echo ' img-align-center'; elseif ($imgalignment == 'right'): echo ' img-align-right'; endif; if ($flexbox): echo ' flexbox-layout'; endif; ?>"<?php if ($maxwidth): echo ' style="max-width: '; echo $maxwidth; echo ';"'; endif; ?>>
 							
 			<?php foreach ( $flexgallery as $fleximage ):
 			$caption = $fleximage['caption']; ?>
-			<li<?php if ($animate): echo ' data-aos="fade-right"'; endif; ?>>
+			<li<?php if ($animate): echo ' data-aos="fade-'; if ($animatedirection): echo $animatedirection; endif; echo'"'; endif; ?>>
 				<img src="<?php echo $fleximage['sizes']['large']; ?>" alt="<?php echo $fleximage['alt']; ?>" />
 				<?php if ($caption): ?>
 				<p class="img-caption<?php if ($captionalignment): echo $captionalignment; endif; ?>"><?php echo $caption ?></p>

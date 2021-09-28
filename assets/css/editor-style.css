@@ -2673,7 +2673,6 @@ body {
 
 .wrapper {
 	background-color: #fff;
-	overflow-x: hidden;
 }
 
 .innerContainer, .wp-block-columns {
