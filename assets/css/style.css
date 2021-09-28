@@ -5001,6 +5001,8 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
+	width: 200px;
+	height: 200px;
 }
 
 .half_half_section .imgContainer img {
