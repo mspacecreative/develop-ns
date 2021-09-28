@@ -74,7 +74,8 @@
     display: flex;
 }
 .home-featured-img,
-.videoOverlay a {
+.videoOverlay a,
+.wp-block-image {
 	position: relative;
     max-height: 500px;
     overflow: hidden;
