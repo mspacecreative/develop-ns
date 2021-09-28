@@ -8,6 +8,7 @@ while ( have_rows('flexible_content') ): the_row();
 	$maxwidth = get_sub_field('max_width');
 	$imgalignment = get_sub_field('image_alignment');
 	$captionalignment = get_sub_field('caption_alignment');
+	$flexbox = get_sub_field('flexbox_layout');
 	
 	switch ($captionalignment) {
 		case 'left':
@@ -24,7 +25,7 @@ while ( have_rows('flexible_content') ): the_row();
 	}
 					
 		if ( $flexgallery ): ?>
-		<ul class="flex-gallery<?php if ($imgalignment == 'center'): echo ' img-align-center'; elseif ($imgalignment == 'right'): echo ' img-align-right'; endif; ?>"<?php if ($maxwidth): echo ' style="max-width: '; echo $maxwidth; echo ';"'; endif; ?>>
+		<ul class="flex-gallery<?php if ($imgalignment == 'center'): echo ' img-align-center'; elseif ($imgalignment == 'right'): echo ' img-align-right'; endif; if ($flexbox): echo ' flexbox-layout'; endif; ?>"<?php if ($maxwidth): echo ' style="max-width: '; echo $maxwidth; echo ';"'; endif; ?>>
 							
 			<?php foreach ( $flexgallery as $fleximage ):
 			$caption = $fleximage['caption']; ?>
