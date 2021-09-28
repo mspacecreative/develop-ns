@@ -5013,7 +5013,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	display: flex;
 }
 
-.home-featured-img, .videoOverlay a, .wp-block-image figure, .wp-block-image .aligncenter {
+.home-featured-img, .videoOverlay a, .wp-block-image figure, .wp-block-image .aligncenter, .size-anamorphic {
 	position: relative;
 	max-height: 500px;
 	overflow: hidden;
