@@ -16,7 +16,7 @@
 					<!-- /logo -->
 					<!-- copyright -->
 					<div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<p class="copyright">&copy; 2019-<?php echo esc_html( date( 'Y' ) ); ?> <?php echo _e( 'Develop Nova Scotia. All rights reserved.' ); ?> <a href="https://developns.ca/privacy-policy/" target="_blank"><?php echo _e('Privacy Policy &raquo;'); ?></a>.</p>
+						<p class="copyright">&copy; 2020-<?php echo esc_html( date( 'Y' ) ); ?> <?php echo _e( 'Develop Nova Scotia. All rights reserved.' ); ?> <a href="https://developns.ca/privacy-policy/" target="_blank"><?php echo _e('Privacy Policy &raquo;'); ?></a>.</p>
 					</div>
 					<!-- /copyright -->
 				</div>
