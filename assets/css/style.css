@@ -5067,16 +5067,19 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 .button.blue_bg:hover {
 	color: #008fb7;
 	border-color: #008fb7;
+	background-color: transparent;
 }
 
 .button.orange_bg:hover {
 	color: #f36f00;
 	border-color: #f36f00;
+	background-color: transparent;
 }
 
 .button.navy_bg:hover {
 	color: #012a3c;
 	border-color: #012a3c;
+	background-color: transparent;
 }
 
 @media (max-width: 850px) {
