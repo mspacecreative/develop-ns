@@ -3962,7 +3962,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	}
 	
 	.bottomMarginMobile {
-		margin-bottom: 1em;
+		margin-bottom: 2em;
 	}
 	
 	.absolutePositionedImg img {
@@ -4033,9 +4033,7 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	.menuContents .nav li.hide-on-mobile {
 		display: none;
 	}
-}
-
-@media (max-width: 768px) {
+	
 	.column-margins, .module-margins {
 		margin-left: 0 !important;
 		margin-right: 0 !important;
