@@ -121,6 +121,10 @@
 	.menuContents .nav li.hide-on-mobile {
 		display: none;
 	}
+	.column-margins, .module-margins {
+		margin-left: 0!important;
+		margin-right: 0!important;
+	}
 }
 
 @media (min-width: 768px) {
@@ -167,10 +171,6 @@
 	}
 	.iconAndTitleContainer {
 	    margin-left: 4em;
-	}
-	.column-margins, .module-margins {
-		margin-left: 0!important;
-		margin-right: 0!important;
 	}
 	.launching-soon {
 		width: 60vw;
