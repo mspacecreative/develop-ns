@@ -2,113 +2,46 @@
 $padding = get_field('section_padding');
 $content = get_field('content_editor');
 $txtalign = get_field('text_alignment');
+
+switch ($padding) {
+	case 'top':
+		$padding = ' top-padding';
+		break;
+	case 'bottom':
+		$padding = ' bottom-padding';
+		break;
+	case 'both':
+		$padding = ' top-bottom-padding';
+		break;
+	default:
+		$padding = ' top-bottom-padding';
+}
+switch ($txtalign) {
+	case 'left':
+		$txtalign = '';
+		break;
+	case 'center':
+		$txtalign = ' text-align-center';
+		break;
+	case 'right':
+		$txtalign = ' text-align-right';
+		break;
+	default:
+		$txtalign = '';
+} ?>
+
+<div class="clear<?php if ($padding): echo $padding; endif; if ($txtalign): echo $txtalign; endif; ?>">
 	
-if ( $txtalign == 'left' ):
-	if ( $padding == 'both' ): ?>
-	<div class="top-bottom-padding clear">
-	
-	<?php elseif ( $padding == 'top'): ?>
-	<div class="top-padding clear">
-	
-	<?php elseif ( $padding == 'bottom'): ?>
-	<div class="bottom-padding clear">
-	
-	<?php else : ?>
-	<div class="top-bottom-padding clear">
-	<?php endif;
-	
-		if ( $content && $bgcolor = 'light' ) {
-			echo $content;
-			include 'content-cta-button-light.php';
-		} elseif ( $content && $bgcolor = 'dark' ) {
-			echo $content;
-			include 'content-cta-button-dark.php';
+	<?php
+	if ( $content ) {
+		echo $content;
+		if ($bgcolor = 'light') {
+		include 'content-cta-button-light.php';
+		} elseif ($bgcolor = 'dark') {
+		include 'content-cta-button-dark.php';
 		} else {
-			echo $content;
-			include 'content-cta-button-light.php';
-		} ?>
+		include 'content-cta-button-light.php';	
+		}
+	} ?>
 			
-	</div>
-	
-<?php elseif ( $txtalign == 'center' ):
-	if ( $padding == 'both' ): ?>
-	<div class="top-bottom-padding clear text-align-center">
-	
-	<?php elseif ( $padding == 'top'): ?>
-	<div class="top-padding clear text-align-center">
-	
-	<?php elseif ( $padding == 'bottom'): ?>
-	<div class="bottom-padding clear text-align-center">
-	
-	<?php else : ?>
-	<div class="top-bottom-padding clear text-align-center">
-	<?php endif;
-	
-		if ( $content && $bgcolor = 'light' ) {
-			echo $content;
-			include 'content-cta-button-light.php';
-		} elseif ( $content && $bgcolor = 'dark' ) {
-			echo $content;
-			include 'content-cta-button-dark.php';
-		} else {
-			echo $content;
-			include 'content-cta-button-light.php';
-		} ?>
-			
-	</div>
-	
-<?php elseif ( $txtalign == 'right' ):
-	if ( $padding == 'both' ): ?>
-	<div class="top-bottom-padding clear text-align-right">
-	
-	<?php elseif ( $padding == 'top'): ?>
-	<div class="top-padding clear text-align-right">
-	
-	<?php elseif ( $padding == 'bottom'): ?>
-	<div class="bottom-padding clear text-align-right">
-	
-	<?php else : ?>
-	<div class="top-bottom-padding clear text-align-right">
-	<?php endif;
-	
-		if ( $content && $bgcolor = 'light' ) {
-			echo $content;
-			include 'content-cta-button-light.php';
-		} elseif ( $content && $bgcolor = 'dark' ) {
-			echo $content;
-			include 'content-cta-button-dark.php';
-		} else {
-			echo $content;
-			include 'content-cta-button-light.php';
-		} ?>
-			
-	</div>
-	
-<?php else :
-	if ( $padding == 'both' ): ?>
-	<div class="top-bottom-padding clear">
-	
-	<?php elseif ( $padding == 'top'): ?>
-	<div class="top-padding clear">
-	
-	<?php elseif ( $padding == 'bottom'): ?>
-	<div class="bottom-padding clear">
-	
-	<?php else : ?>
-	<div class="clear">
-	<?php endif;
-	
-		if ( $content && $bgcolor = 'light' ) {
-			echo $content;
-			include 'content-cta-button-light.php';
-		} elseif ( $content && $bgcolor = 'dark' ) {
-			echo $content;
-			include 'content-cta-button-dark.php';
-		} else {
-			echo $content;
-			include 'content-cta-button-light.php';
-		} ?>
-			
-	</div>
-	
-<?php endif; ?>
+</div>
